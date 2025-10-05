@@ -1,0 +1,72 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+canvas {
+  display: block;
+}
+.text {
+  position: absolute;
+  top: 75vw;
+  left: 39%;
+  color: #FFFFFF;
+  font-size: 6vw;
+  font-family: "crepster", cursive;
+}
+.text2 {
+  position: absolute;
+  top: 83vw;
+  left: 20%;
+  color: #ffffff;
+  font-size: 12vw;
+  font-family: "orbitron",sans-serif;
+}
+.text3 {
+  position: absolute;
+  top: 99vw;
+  left: 26%;
+  color: #ffffff;
+  font-size: 5vw;
+  font-family: "Great Vibes",cursive;
+}
+.text4 {
+  position: absolute;
+  top: 83vw;
+  left: 18%;
+  color: #ffffff;
+  font-size: 9vw;
+  font-family: "orbitron",sans-serif;
+}
+.contactus {
+  position: absolute;
+  background: #ffffff;
+  top: 65%;
+  left: 50%;
+  border-radius: 5vw;
+  padding: 2vw;
+  transform: translate(-50% , -50%);
+  font-size: 6vw;
+}
+.contactus1 {
+  color: black;
+  text-decoration: none;
+}
+.contactus:hover {
+  position: absolute;
+  background: #000;
+  top: 65%;
+  left: 50%;
+  border-radius: 5vw;
+  padding: 2vw;
+  transform: translate(-50% , -50%);
+  font-size: 6vw;
+  border: 2px solid #FFFFFF;
+}
+.contactus1:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
