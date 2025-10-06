@@ -57,7 +57,7 @@ canvas {
 }
 .contactus:hover {
   position: absolute;
-  background: #000;
+  background: transparent;
   top: 65%;
   left: 50%;
   border-radius: 5vw;
