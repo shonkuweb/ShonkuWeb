@@ -43,20 +43,6 @@ canvas {
 }
 .contactus {
   position: absolute;
-  background: #ffffff;
-  top: 65%;
-  left: 50%;
-  border-radius: 5vw;
-  padding: 2vw;
-  transform: translate(-50% , -50%);
-  font-size: 6vw;
-}
-.contactus1 {
-  color: black;
-  text-decoration: none;
-}
-.contactus:hover {
-  position: absolute;
   background: transparent;
   top: 65%;
   left: 50%;
@@ -66,7 +52,8 @@ canvas {
   font-size: 6vw;
   border: 2px solid #FFFFFF;
 }
-.contactus1:hover {
+
+.contactus1 {
   color: #ffffff;
   text-decoration: none;
 }
