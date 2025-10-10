@@ -1,13 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ShonkuWeb</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <canvas id="starfield"></canvas>
-  <script src="script.js"></script>
-</body>
+<!doctype html>
+<html>
+  <head lang="en">
+    <title>ShonkuWeb</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="headerlogo">
+          <img src="/ShonkuWebLogo.png" alt="Logo">
+        </div>
+      </div>
+    </header>
+    <main>
+ 
+  <section class="section1">
+  <span class="text1">Welcome to</span>
+   <span class="text2">ShonkuWeb</span>
+   <span class="text3">Building the future , AI-First</span>
+   <span class="servicesspan"><a href="#section2">services</a></span>
+    <span class="contactusspan"><a href="#section3">Contact Us</a></span>
+  </section>
+   <section class="section2"id="section2">
+  <span class="text4">Our Services</span>
+  <!-- <div class="service1"></div> -->
+  </section>
+  <section class="section3" id="section3">
+      <span class="text5">Contact Us</span>
+     <div class="clientform">
+       <form id="contactForm" action="https://formspree.io/f/mnnggdpd" method="POST">
+  <input type="text" name="name" placeholder="Business Name" required>
+  <input type="email" name="email" placeholder="Business Mail" required>
+  <input type="tel" name="mobile" placeholder="Contact Number" required>
+  <textarea name="message" id="message" cols="30" placeholder="Type your query here..." required></textarea> 
+  
+  <button type="submit">Send >></button>
+</form>
+
+<!-- Success message div -->
+<div id="successMessage">
+  <span>Your Querry Send Sucessfully</span>
+  <br>
+  <span id="msgonsuccess">*we'll reachout to you within 24 hrs*</span>
+   <br>
+  <span id="msgonsuccess1">~ Team ShonkuWeb</span>
+</div>
+     </div>
+      </div>
+      <span class="x">
+        <a href="https://x.com/ShonkuWeb">
+        <img src="x.svg" alt="x">
+        </a>
+        </span>
+        <span class="linkedin">
+          <a href="https://linkedin.com/in/shonkuweb">
+           <img src="linkedin.svg" alt="linkedin">
+        </a>
+        </span>
+        <span class="email">
+          <a href="mailto:shonkuweb@gmail.com">
+        <img src="email.svg" alt="email">
+        </a>
+        </span>
+        <span class="rights">
+          <footer>
+  <p>© 2025 <strong>ShonkuWeb</strong>. All rights reserved.
+  </p></footer>
+        </span>
+    <script src="/script.js"></script>
+  </section>
+    </main>
+  </body>
 </html>

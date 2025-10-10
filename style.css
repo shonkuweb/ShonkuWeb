@@ -1,11 +1,253 @@
-body, html {
+@font-face {
+  font-family: custom;
+  src: url(/TheSally.ttf);
+}
+* {
   margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-  background: black;
+  border: border-box;
+}
+body {
+  background-color: black;
+  z-index: -1;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.30);
+  backdrop-filter: blur(10px);
+  margin-top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.headerlogo img{
+  height: 22vw;
+  
+}
+.section1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+.section2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  
+}
+.section3 {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  
+}
+.text1 {
+  color: #ffffff;
+  position: absolute;
+  top: 35vh;
+  left: 33%;
+  font-size: 7vw;
+  font-family:custom;
+  
+}
+.text2 {
+  color: #a4fbff;
+  position: absolute;
+  top: 40vh;
+  left:22%;
+  font-size: 10vw;
+  font-family: 'arial', 'halvetica';
+}
+.text3 {
+  position: absolute;
+  top: 46vh;
+  left: 30%;
+  font-size: 3vw;
+  color: #ffffff;
+}
+.servicesspan {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 10vw;
+  border: 2px solid #a4fbff;
+  height: 10vw;
+  width: 30vw;
+  top: 55vh;
+  text-align: center;
+  left: 15vw;
+  text-decoration: none;
+  font-family: "Segoe UI Symbol", "Arial", sans-serif;
 }
 
-canvas {
+.servicesspan a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  height:100%;
+  width: 100%;
+  font-size: 5vw;
+  top: 2vw;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.contactusspan {
+  position: absolute;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 10vw;
+  border: 2px solid #a4fbff;
+  height: 10vw;
+  width: 30vw;
+  top: 55vh;
+  text-align: center;
+  right: 15vw;
+  text-decoration: none;
+  font-family: "Segoe UI Symbol", "Arial", sans-serif;
+}
+
+.contactusspan a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  height:100%;
+  width: 100%;
+  font-size: 5vw;
+  top: 2vw;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.text4 {
+  font-size: 9vw;
+  font-family: custom;
+  position: relative;
+  top: 15vh;
+  left: 29%;
+}
+.service1 {
+  position: relative;
+  background-color: white;
+  height:20vw;
+  width: 40vw;
+  left: 20vw;
+}
+.text5 {
+  font-size: 9vw;
+  font-family: custom;
+  position: relative;
+  top: 15vh;
+  left: 29%;
+}
+.x {
+    outline: none;
+  -webkit-tap-highlight-color: transparent;
+  position: absolute;
+  display: inline-block;
+  top: 282vh;
+  height: 6vh;
+  width: 6vh;
+  right: 60vw;
+  
+}
+.linkedin {
+    outline: none;
+  -webkit-tap-highlight-color: transparent;
+  position: absolute;
+  display: inline-block;
+  top: 281.5vh;
+  height: 6vh;
+  width: 6vh;
+  right: 45vw;
+}
+.email {
+    outline: none;
+  -webkit-tap-highlight-color: transparent;
+  position: absolute;
+  display: inline-block;
+  top: 282vh;
+  height: 4.5vh;
+  width: 4.5vh;
+  right: 30vw;
+}
+.rights {
+  position: absolute;
+  top: 290vh;
+  font-size: 3vw;
+  left: 20vw;
+  color: #a4fbff;
+}
+.clientform{
+  position: relative;
+  
+  top:20vh;
+  width: 85vw;
+  left: 7vw;
+  
+}
+#contactForm input {
+  position: relative;
+  top:1vh;
   display: block;
+  background-color:transparent;
+  width: 80vw;
+  margin: 35px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #a4fbff;
+  color: #fff;
+  font-size: 16px;
+}
+#contactForm textarea {
+  position: relative;
+  top:1vh;
+  display: block;
+  background-color:transparent;
+  width: 80vw;
+  margin: 30px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #a4fbff;
+  color: #fff;
+  font-size: 16px;
+}
+
+#contactForm button {
+  position: relative;
+  right: -65vw;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #a4fbff;
+  color: black;
+  font-size: 16px;
+}
+
+#contactForm button:hover {
+  background-color: #a4fbff;
+}
+#successMessage {
+  position: relative;
+  top: 20vh;
+  display: none;               /* hidden initially */
+  text-align: center;
+  padding: 20px 30px;
+  font-size: 5vw;
+  font-family: 'Arial', sans-serif;
+  color: #a4fbff;
+  background: transparent;  /* semi-transparent blue */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  max-width: 400px;
+  margin: 20px auto;
+  transition: all 0.5s ease;
+}
+#msgonsuccess {
+  font-size: 3vw;
+}
+#msgonsuccess1 {
+font-size: 4vw;
 }
