@@ -4,4 +4,4 @@ ShonkuWe.com v.2.0
 date -->,10th October 2025
 
 Shonkuweb.com v.3.0
-date --> 15th October 2025
+date --> 15 October 2025
