@@ -1,11 +1,11 @@
-
+@import url(/Pacifico-Regular.ttf);
 * {
   margin: 0;
   border: border-box;
 }
 body {
   background-color:;
-  z-index: -1;
+
   background-color: #F9F6EE;
 }
 .navbar {
@@ -14,11 +14,87 @@ body {
   left:5vw;
   background-color: rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(10px);
-  margin-top: 0;
   width: 90%;
-  z-index: 1;
   border-radius: 35vw;
+  
 }
-.headerlogo img{
-  height:9vh;
+img{
+position: relative;
+width: auto;
+height:8vh;
+}
+
+.dots{
+  position:absolute;
+   font-size:  5vh;
+  color: black;
+  cursor: pointer;
+  margin-left: auto;/* pushes dots to the right */
+right: 24px;
+  top:9px;
+
+}
+/* main header text */
+
+.home{
+position: relative;
+margin-top: 20vh;
+height: 300px;
+margin-left: 30px;
+margin-right: 30px;
+border-radius: 10px;
+
+
+}
+.home h2{
+  position: relative;
+  font-family: pacifico, cursive;
+  font-size: 4vh;
+  text-align: center;
+  
+}
+.home h1{
+  position: relative;
+  font-family:, cursive;
+  font-size: 5vh;
+  text-align: center;
+  
+}
+.home p{
+  position: relative;
+  font-family:sans-serif , cursive;
+  font-size:3vh;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+.services{
+  position:absolute;
+  font-family:sans-serif , cursive;
+  font-size:10px;
+  text-align: center;
+top:65vh;
+  left:50%;
+  transform: translateX(-50%);
+   display: flex;
+border: 2px solid black;
+border-radius: 18px;
+padding: 2vh;
+color: black;
+cursor: pointer;
+}
+.services:hover{
+  position:absolute;
+  font-family:sans-serif , cursive;
+  font-size:10px;
+  text-align: center;
+
+  left:50%;
+  transform: translateX(-50%);
+   display: flex;
+border: 2px solid #F9F6EE;
+
+color:#F9F6EE;
+background-color: black;
+cursor: pointer;
 }
