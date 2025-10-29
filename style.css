@@ -27,7 +27,7 @@ height:8vh;
 .dots{
   position:absolute;
    font-size:  5vh;
-  color: black;
+  color: #0d1b2b;
   cursor: pointer;
   margin-left: auto;/* pushes dots to the right */
 right: 24px;
@@ -77,10 +77,10 @@ top:65vh;
   left:50%;
   transform: translateX(-50%);
    display: flex;
-border: 2px solid black;
+border: 2px solid #0d1b2b;
 border-radius: 18px;
 padding: 2vh;
-color: black;
+color: #0d1b2b;
 cursor: pointer;
 }
 .services:hover{
@@ -95,6 +95,38 @@ cursor: pointer;
 border: 2px solid #F9F6EE;
 
 color:#F9F6EE;
-background-color: black;
+background-color:#0d1b2b; 
 cursor: pointer;
+}
+/*services.html*/
+.services1{
+  position:relative;
+  background-color: #0d1b2b;
+  top: 12vh;
+  margin-left: 20%;
+ margin-right: 20%;
+  display: flex;
+  
+  height: 30vh;
+  border-radius: 20px;
+  color:#F9F6EE;
+}
+
+.services1 span{
+  position: relative;
+  font-family: sans-serif , cursive;
+  font-size: 3vw;
+  text-align: center;
+  left:19vw;
+  margin-top:12vh;
+
+  
+}
+.ourservices{
+  position: relative;
+  font-family: pacifico, cursive;
+  font-size: 4vh;
+  text-align: center;
+  margin-top: 20vh;
+  color: #0d1b2b;
 }
