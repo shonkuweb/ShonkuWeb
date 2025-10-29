@@ -71,7 +71,7 @@ border-radius: 10px;
 .services{
   position:absolute;
   font-family:sans-serif , cursive;
-  font-size:10px;
+  font-size:12px;
   text-align: center;
 top:65vh;
   left:50%;
@@ -86,7 +86,7 @@ cursor: pointer;
 .services:hover{
   position:absolute;
   font-family:sans-serif , cursive;
-  font-size:10px;
+  font-size:12px;
   text-align: center;
 
   left:50%;
