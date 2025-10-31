@@ -130,3 +130,13 @@ cursor: pointer;
   margin-top: 20vh;
   color: #0d1b2b;
 }
+.pay-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.note {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+}
