@@ -42,7 +42,7 @@
 
         <label class="form-field">
           <span class="form-label">Mobile Number</span>
-          <input type="tel" name="mobile" placeholder="+1234567890" required pattern="[0-9+\\-\\s()]{7,20}" aria-describedby="mobileHelp">
+          <input type="tel" name="mobile" placeholder="10-digit mobile number" required pattern="\\d{10}" minlength="10" maxlength="10" inputmode="numeric" title="Please enter exactly 10 digits.">
         </label>
       </div>
 
@@ -61,7 +61,7 @@
             <option value="web_development">Web Development</option>
             <option value="ios_development">iOS Development</option>
             <option value="android_development">Android Development</option>
-            <option value="ai_bot_development">AI Bot Development</option>
+            <option value="Customer Support AI">Customer Support AI</option>
           </select>
         </label>
       </div>
@@ -160,10 +160,30 @@
         submitBtn.textContent = 'Sending...';
       }
       try {
+        // Block submission if required inputs are not valid
+        if (!form.checkValidity()) {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText || 'Send Message';
+          }
+          form.reportValidity();
+          return;
+        }
+
         const formData = new FormData(form);
+        // Normalize and validate mobile to exactly 10 digits
+        const rawMobile = (formData.get('mobile')?.toString() || '').replace(/\\D/g, '');
+        if (rawMobile.length !== 10) {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText || 'Send Message';
+          }
+          alert('Please enter a valid 10-digit mobile number.');
+          return;
+        }
         const data = {
           businessName: formData.get('business_name')?.toString().trim() || '',
-          mobile: formData.get('mobile')?.toString().trim() || '',
+          mobile: rawMobile,
           email: formData.get('email')?.toString().trim() || '',
           service: formData.get('service')?.toString() || '',
           message: formData.get('message')?.toString().trim() || '',
