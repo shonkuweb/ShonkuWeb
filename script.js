@@ -48,17 +48,26 @@ serviceCards.forEach((card) => {
   });
 });
 
-// Pointer-follow glow on testimonial cards
-const testimonialCards = document.querySelectorAll('.testimonial');
-testimonialCards.forEach((card) => {
-  card.addEventListener('pointermove', (e) => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    card.style.setProperty('--tx', `${x}px`);
-    card.style.setProperty('--ty', `${y}px`);
+// Testimonials are auto-scrolling and non-interactive
+// Pointer-follow glow removed to prevent user interaction
+// Prevent scroll interference on testimonials ticker
+const testimonialsTicker = document.querySelector('.testimonials-ticker');
+if (testimonialsTicker) {
+  // Prevent wheel scrolling
+  testimonialsTicker.addEventListener('wheel', (e) => {
+    e.preventDefault();
+  }, { passive: false });
+  
+  // Prevent touch scrolling
+  testimonialsTicker.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+  }, { passive: false });
+  
+  // Prevent drag
+  testimonialsTicker.addEventListener('dragstart', (e) => {
+    e.preventDefault();
   });
-});
+}
 
 // Mobile-only: reveal service cards one-by-one with parallax
 const mobileQuery = window.matchMedia('(max-width: 768px)');
