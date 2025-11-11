@@ -26,54 +26,36 @@
   </nav>
 </header>
 <!-- Fullscreen Sections -->
-<section class="section" id="section2">// ...existing code...
-<header>
-  <nav class="navbar">
-    <div class="logo">ShonkuWeb</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-      <li><a href="terms&conditions.html">Terms</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-</header>
 <!-- Contact Section -->
 <section class="section" id="section2">
-  <div class="contact-container" style="max-width:960px;margin:0 auto;padding:48px 20px;">
-    <h2 style="color:#fff;text-align:center;margin-bottom:18px;">Contact Us</h2>
-    <p style="color:#cfcfcf;text-align:center;margin-bottom:28px;">Tell us about your project — we'll get back to you within one business day.</p>
+  <div class="contact-container">
+    <h2 class="contact-title">Contact Us</h2>
+    <p class="contact-subtitle">Tell us about your project — we'll get back to you within one business day.</p>
 
-    <form class="contact-form" action="#" method="post" novalidate style="background:rgba(255,255,255,0.02);padding:28px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
-      <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
-        <label style="display:flex;flex-direction:column;color:#e6e6e6;font-size:0.95rem;">
-          Business Name
-          <input type="text" name="business_name" placeholder="Your business or company name" required style="margin-top:8px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff;">
+    <form class="contact-form" action="#" method="post" novalidate>
+      <div class="form-row">
+        <label class="form-field">
+          <span class="form-label">Business Name</span>
+          <input type="text" name="business_name" placeholder="Your business or company name" required>
         </label>
 
-        <label style="display:flex;flex-direction:column;color:#e6e6e6;font-size:0.95rem;">
-          Mobile Number
-          <input type="tel" name="mobile" placeholder="+1234567890" required pattern="[0-9+\-\s()]{7,20}" aria-describedby="mobileHelp" style="margin-top:8px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff;">
-        </label>
-      </div>
-
-      <div style="margin-bottom:16px;">
-        <label style="display:flex;flex-direction:column;color:#e6e6e6;font-size:0.95rem;">
-          Email
-          <input type="email" name="email" placeholder="you@company.com" required style="margin-top:8px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff;">
+        <label class="form-field">
+          <span class="form-label">Mobile Number</span>
+          <input type="tel" name="mobile" placeholder="+1234567890" required pattern="[0-9+\\-\\s()]{7,20}" aria-describedby="mobileHelp">
         </label>
       </div>
 
-      <div style="margin-bottom:16px;">
-        <label style="display:flex;flex-direction:column;color:#e6e6e6;font-size:0.95rem;">
-          Services
-          <select name="service" required style="margin-top:8px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff;">
+      <div class="form-row single">
+        <label class="form-field">
+          <span class="form-label">Email</span>
+          <input type="email" name="email" placeholder="you@company.com" required>
+        </label>
+      </div>
+
+      <div class="form-row single">
+        <label class="form-field">
+          <span class="form-label">Services</span>
+          <select name="service" required>
             <option value="">-- Select a service --</option>
             <option value="web_development">Web Development</option>
             <option value="ios_development">iOS Development</option>
@@ -83,17 +65,32 @@
         </label>
       </div>
 
-      <div style="margin-bottom:18px;">
-        <label style="display:flex;flex-direction:column;color:#e6e6e6;font-size:0.95rem;">
-          Message (optional)
-          <textarea name="message" rows="5" placeholder="Brief description of your project, timeline and budget (optional)" style="margin-top:8px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff;"></textarea>
+      <div class="form-row single">
+        <label class="form-field">
+          <span class="form-label">Message (optional)</span>
+          <textarea name="message" rows="5" placeholder="Brief description of your project, timeline and budget (optional)"></textarea>
         </label>
       </div>
 
-      <div style="text-align:right;">
-        <button type="submit" style="padding:12px 20px;border-radius:10px;border:none;background:linear-gradient(90deg,#00bcd4,#3ddc97);color:#051017;font-weight:700;cursor:pointer;">Send Message</button>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Send Message</button>
       </div>
     </form>
+
+    <div class="contact-info">
+      <div class="contact-info-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:shonkuweb@gmail.com">shonkuweb@gmail.com</a>
+      </div>
+      <div class="contact-info-item">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+916289417338">+91 6289417338</a>
+      </div>
+      <div class="contact-info-item">
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/916289417338" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp us</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -109,6 +106,13 @@
       <a href="aboutus.html">About Us</a>
       <a href="terms&conditions.html">Terms & Conditions</a>
       <a href="contactus.html">Contact Us</a>
+    </div>
+
+    <div class="footer-cta">
+      <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        Back to top
+      </a>
     </div>
 
     <div class="footer-socials">
