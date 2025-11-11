@@ -132,5 +132,59 @@
   </footer>
 </section>
 <script src="script.js"></script>
+<!-- Firebase Firestore submit (page-specific) -->
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js';
+  import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js';
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDsT0k5sRTIp9KEFKc5z0S17veGdxo5py4",
+    authDomain: "shonkuwebcontactusform.firebaseapp.com",
+    projectId: "shonkuwebcontactusform",
+    storageBucket: "shonkuwebcontactusform.firebasestorage.app",
+    messagingSenderId: "422539847891",
+    appId: "1:422539847891:web:64658ab417cb622cf60c26"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  const form = document.querySelector('.contact-form');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+      }
+      try {
+        const formData = new FormData(form);
+        const data = {
+          businessName: formData.get('business_name')?.toString().trim() || '',
+          mobile: formData.get('mobile')?.toString().trim() || '',
+          email: formData.get('email')?.toString().trim() || '',
+          service: formData.get('service')?.toString() || '',
+          message: formData.get('message')?.toString().trim() || '',
+          page: window.location.href,
+          userAgent: navigator.userAgent,
+          createdAt: serverTimestamp()
+        };
+        await addDoc(collection(db, 'contact_messages'), data);
+        alert('Thanks! Your message has been sent. We will contact you soon.');
+        form.reset();
+      } catch (err) {
+        console.error('Contact form submission failed:', err);
+        alert('Sorry, something went wrong while sending your message. Please try again later.');
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText || 'Send Message';
+        }
+      }
+    });
+  }
+</script>
 </body>
 </html>
