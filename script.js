@@ -48,6 +48,18 @@ serviceCards.forEach((card) => {
   });
 });
 
+// Pointer-follow glow on testimonial cards
+const testimonialCards = document.querySelectorAll('.testimonial');
+testimonialCards.forEach((card) => {
+  card.addEventListener('pointermove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    card.style.setProperty('--tx', `${x}px`);
+    card.style.setProperty('--ty', `${y}px`);
+  });
+});
+
 // Mobile-only: reveal service cards one-by-one with parallax
 const mobileQuery = window.matchMedia('(max-width: 768px)');
 let servicesObserver = null;
