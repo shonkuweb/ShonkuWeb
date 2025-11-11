@@ -93,6 +93,11 @@
       </div>
     </div>
   </div>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <span id="toast-message"></span>
+  </div>
 </section>
 
 <section class="section footer" id="section4">
@@ -149,6 +154,24 @@
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
 
+  // Toast notification function
+  function showToast(message, isError = false) {
+    const toast = document.getElementById('toast');
+    const toastMessage = document.getElementById('toast-message');
+    if (!toast || !toastMessage) return;
+
+    toastMessage.textContent = message;
+    toast.classList.remove('error');
+    if (isError) {
+      toast.classList.add('error');
+    }
+
+    toast.classList.add('show');
+    setTimeout(() => {
+      toast.classList.remove('show');
+    }, 4000);
+  }
+
   // Auto-format mobile input: only allow digits, max 10
   const mobileInput = document.getElementById('mobileInput');
   if (mobileInput) {
@@ -200,7 +223,7 @@
             submitBtn.disabled = false;
             submitBtn.textContent = originalText || 'Send Message';
           }
-          alert('Please enter a valid 10-digit mobile number.');
+          showToast('Please enter a valid 10-digit mobile number.', true);
           const mobileField = document.getElementById('mobileInput');
           if (mobileField) {
             mobileField.focus();
@@ -218,11 +241,11 @@
           createdAt: serverTimestamp()
         };
         await addDoc(collection(db, 'contact_messages'), data);
-        alert('Thanks! Your message has been sent. We will contact you soon.');
+        showToast('Message sent successfully! We will contact you soon.');
         form.reset();
       } catch (err) {
         console.error('Contact form submission failed:', err);
-        alert('Sorry, something went wrong while sending your message. Please try again later.');
+        showToast('Something went wrong. Please try again later.', true);
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
