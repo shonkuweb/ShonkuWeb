@@ -42,7 +42,7 @@
 
         <label class="form-field">
           <span class="form-label">Mobile Number</span>
-          <input type="tel" name="mobile" placeholder="10-digit mobile number" required pattern="\\d{10}" minlength="10" maxlength="10" inputmode="numeric" title="Please enter exactly 10 digits.">
+          <input type="tel" name="mobile" id="mobileInput" placeholder="10-digit mobile number" required pattern="[0-9]{10}" minlength="10" maxlength="10" inputmode="numeric" title="Please enter exactly 10 digits (numbers only).">
         </label>
       </div>
 
@@ -149,6 +149,28 @@
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
 
+  // Auto-format mobile input: only allow digits, max 10
+  const mobileInput = document.getElementById('mobileInput');
+  if (mobileInput) {
+    mobileInput.addEventListener('input', (e) => {
+      // Remove any non-digit characters
+      let value = e.target.value.replace(/\D/g, '');
+      // Limit to 10 digits
+      if (value.length > 10) {
+        value = value.slice(0, 10);
+      }
+      e.target.value = value;
+    });
+
+    // Prevent paste of non-numeric content
+    mobileInput.addEventListener('paste', (e) => {
+      e.preventDefault();
+      const paste = (e.clipboardData || window.clipboardData).getData('text');
+      const digits = paste.replace(/\D/g, '').slice(0, 10);
+      mobileInput.value = digits;
+    });
+  }
+
   const form = document.querySelector('.contact-form');
   if (form) {
     form.addEventListener('submit', async (e) => {
@@ -172,13 +194,17 @@
 
         const formData = new FormData(form);
         // Normalize and validate mobile to exactly 10 digits
-        const rawMobile = (formData.get('mobile')?.toString() || '').replace(/\\D/g, '');
+        const rawMobile = (formData.get('mobile')?.toString() || '').replace(/\D/g, '');
         if (rawMobile.length !== 10) {
           if (submitBtn) {
             submitBtn.disabled = false;
             submitBtn.textContent = originalText || 'Send Message';
           }
           alert('Please enter a valid 10-digit mobile number.');
+          const mobileField = document.getElementById('mobileInput');
+          if (mobileField) {
+            mobileField.focus();
+          }
           return;
         }
         const data = {
