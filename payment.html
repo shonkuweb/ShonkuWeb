@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout - ShonkuWeb</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="section1"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ShonkuWeb</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="terms&conditions.html">Terms</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <div class="redevelopment-banner">
+        ⚠️ This website is under re-development by ShonkuWeb as we are adding new service offers to our clients.
+    </div>
+
+    <main class="payment-wrapper">
+        <section class="payment-container" style="text-align: center; padding: 100px 20px;">
+            <div class="coming-soon-message">
+                <i class="fas fa-wallet" style="font-size: 4rem; color: #4285F4; margin-bottom: 20px;"></i>
+                <h1 style="font-size: 2.5rem; margin-bottom: 15px;">Google Pay Wallet Integration</h1>
+                <p style="font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto;">
+                    We will integrate the Google Pay Wallet API checkout system here once approved.
+                    <br><br>
+                    <strong>Coming Soon</strong>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <section class="section footer" id="section4">
+        <footer class="footer-container">
+            <div class="footer-message">
+                <h2>Thank You for Visiting ShonkuWeb</h2>
+                <p>We appreciate your time and interest. Let's build something extraordinary together — from concept to
+                    deployment, we're here to make it happen.</p>
+            </div>
+            <div class="footer-links">
+                <a href="aboutus.html">About Us</a>
+                <a href="terms&conditions.html">Terms & Conditions</a>
+                <a href="contactus.html">Contact Us</a>
+            </div>
+            <div class="footer-cta">
+                <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
+                    <i class="fas fa-arrow-up" aria-hidden="true"></i> Back to top
+                </a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://x.com/shonkuweb" target="_blank" aria-label="X (Twitter)">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://youtube.com/@ShonkuWeb" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://instagram.com/shonkuweb" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p class="footer-copy">© 2025 ShonkuWeb. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple script to handle URL params for plan selection
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const plan = urlParams.get('plan');
+
+            const planNameEl = document.getElementById('planName');
+            const planPriceEl = document.getElementById('planPrice');
+            const subtotalEl = document.getElementById('subtotal');
+            const taxEl = document.getElementById('tax');
+            const totalEl = document.getElementById('total');
+
+            let price = 0;
+            let name = "Select a Plan";
+
+            if (plan === 'starting') {
+                name = "Starting Plan";
+                price = 19900;
+            } else if (plan === 'medium') {
+                name = "Medium Plan";
+                price = 25900;
+            }
+
+            const tax = price * 0.18;
+            const total = price + tax;
+
+            planNameEl.textContent = name;
+
+            const formatCurrency = (num) => '₹' + num.toLocaleString('en-IN');
+
+            planPriceEl.textContent = formatCurrency(price);
+            subtotalEl.textContent = formatCurrency(price);
+            taxEl.textContent = formatCurrency(tax);
+            totalEl.textContent = formatCurrency(total);
+        });
+    </script>
+</body>
+
+</html>

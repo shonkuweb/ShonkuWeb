@@ -1,231 +1,251 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Web Development Agency</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Web Development Agency</title>
+  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-  <nav class="navbar">
-    <div class="logo">ShonkuWeb</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-      <li><a href="terms&conditions.html">Terms</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-</header>
-<!-- Fullscreen Sections -->
-<!-- Hero / Welcome Section -->
-<section class="section hero" id="section1">
+  <header>
+    <nav class="navbar">
+      <div class="logo">ShonkuWeb</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="terms&conditions.html">Terms</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-  <div class="hero-content">
-    <h1 class="hero-title">Welcome to <span>ShonkuWeb</span></h1>
-    <p class="hero-tagline">From design to deployment — we build, optimize, and manage the complete tech stack that boosts your business.</p>
-    <p class="hero-subtext">We’re not just developers — we’re your strategic partners in digital growth. At ShonkuWeb, every line of code and every pixel is crafted to help your brand rise above the noise.</p>
-    <a  class="hero-btn" href="#section2">Our Services</a>
+  <div class="redevelopment-banner">
+    ⚠️ This website is under re-development by ShonkuWeb as we are adding new service offers to our clients.
   </div>
-</section>
+
+  <!-- Brand Theme Hero Section -->
+  <section class="brand-hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content">
+
+      <div class="trust-badge">
+        <span class="trust-dot"></span>
+        <span>Rated 5/5 by 50+ Founders</span>
+      </div>
+
+      <h1 class="hero-title-main">
+        Building <span class="highlight-text">Digital Empires</span>,<br>
+        Not Just Websites
+      </h1>
+
+      <h2 class="hero-title-sub">
+        Scalable Tech for Ambitious Brands
+      </h2>
+
+      <p class="hero-desc">
+        From robust backends to stunning frontends, we engineer the complete digital ecosystem your business needs to
+        dominate the market.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="services.html" class="btn-primary-brand">Explore Our Services <i class="fas fa-arrow-right"></i></a>
+        <a href="contactus.html" class="btn-outline-brand">Talk to an Expert <i class="fas fa-comment-dots"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Stats / Why Choose Us Section (Upgraded) -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number">100+</span>
+        <span class="stat-label">Projects Delivered</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">98%</span>
+        <span class="stat-label">Client Retention</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Support Coverage</span>
+      </div>
+    </div>
+  </section>
+
+
   <section class="section" id="section2">
-    <div class="services">
+    <div class="services brand-details" style="background: transparent; padding-top: 80px;">
+      <!-- Reuse brand-details styles but mostly for the cards -->
       <div class="services-container">
-        <h2 class="services-title">Services</h2>
-  
-        <div class="services-grid">
+        <h2 class="services-title">Our Core Expertise</h2>
 
-          <article class="service-item" tabindex="0">
-            <div class="service-icon" aria-hidden="true"><i class="fas fa-code"></i></div>
-            <h3 class="service-name">Web Development</h3>
-            <p class="service-description">Fast, secure and scalable websites and web apps optimized for SEO and conversions.</p>
-            <div class="service-actions" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px;">
-              <a href="services.html#web-dev" style="padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.18);text-decoration:none;color:#fff;background:rgba(255,255,255,0.06);">Learn more</a>
-              <a href="contactus.html" class="hero-btn" style="padding:10px 16px;">Contact us</a>
-            </div>
-          </article>
+        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
 
-          <!-- Replaced with the 4 requested services -->
-          <article class="service-item" tabindex="0">
-            <div class="service-icon" aria-hidden="true"><i class="fas fa-headset"></i></div>
-            <h3 class="service-name">Customer Support AI</h3>
-            <p class="service-description">AI assistants and automations that resolve queries 24/7 and cut response times.</p>
-            <div class="service-actions" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px;">
-              <a href="services.html#customer-support-ai" style="padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.18);text-decoration:none;color:#fff;background:rgba(255,255,255,0.06);">Learn more</a>
-              <a href="contactus.html" class="hero-btn" style="padding:10px 16px;">Contact us</a>
-            </div>
+          <!-- Web Dev Card -->
+          <article class="brand-card service-item"
+            style="display: flex; flex-direction: column; align-items: flex-start; text-align: left; padding: 32px;">
+            <div class="detail-icon" style="width: 60px; height: 60px; font-size: 2rem; margin: 0 0 20px 0;"><i
+                class="fas fa-code"></i></div>
+            <h3 class="service-name" style="font-size: 1.4rem;">Web Development</h3>
+            <p class="service-description" style="margin-bottom: 24px;">Fast, secure and scalable websites and web apps
+              optimized for SEO and conversions.</p>
+            <a href="services.html#web-dev" class="detail-btn">Learn more <i class="fas fa-arrow-right"></i></a>
           </article>
 
-          <article class="service-item" tabindex="0">
-            <div class="service-icon" aria-hidden="true"><i class="fab fa-android"></i></div>
-            <h3 class="service-name">Android Development</h3>
-            <p class="service-description">Native-quality Android apps with delightful UX and reliable, scalable backends.</p>
-            <div class="service-actions" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px;">
-              <a href="services.html#android-dev" style="padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.18);text-decoration:none;color:#fff;background:rgba(255,255,255,0.06);">Learn more</a>
-              <a href="contactus.html" class="hero-btn" style="padding:10px 16px;">Contact us</a>
-            </div>
+          <!-- AI Card -->
+          <article class="brand-card service-item"
+            style="display: flex; flex-direction: column; align-items: flex-start; text-align: left; padding: 32px;">
+            <div class="detail-icon" style="width: 60px; height: 60px; font-size: 2rem; margin: 0 0 20px 0;"><i
+                class="fas fa-brain"></i></div>
+            <h3 class="service-name" style="font-size: 1.4rem;">AI Solutions</h3>
+            <p class="service-description" style="margin-bottom: 24px;">Intelligent chatbots and automation workflows
+              that streamline your operations.</p>
+            <a href="services.html#customer-support-ai" class="detail-btn">Learn more <i
+                class="fas fa-arrow-right"></i></a>
           </article>
 
-          <article class="service-item" tabindex="0">
-            <div class="service-icon" aria-hidden="true"><i class="fab fa-apple"></i></div>
-            <h3 class="service-name">iOS Development</h3>
-            <p class="service-description">High‑polish iOS apps crafted for performance, accessibility and App Store success.</p>
-            <div class="service-actions" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px;">
-              <a href="services.html#ios-dev" style="padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.18);text-decoration:none;color:#fff;background:rgba(255,255,255,0.06);">Learn more</a>
-              <a href="contactus.html" class="hero-btn" style="padding:10px 16px;">Contact us</a>
-            </div>
+          <!-- Mobile Card -->
+          <article class="brand-card service-item"
+            style="display: flex; flex-direction: column; align-items: flex-start; text-align: left; padding: 32px;">
+            <div class="detail-icon" style="width: 60px; height: 60px; font-size: 2rem; margin: 0 0 20px 0;"><i
+                class="fas fa-mobile-alt"></i></div>
+            <h3 class="service-name" style="font-size: 1.4rem;">Mobile Apps</h3>
+            <p class="service-description" style="margin-bottom: 24px;">Native iOS and Android applications built for
+              performance and user engagement.</p>
+            <a href="services.html#android-dev" class="detail-btn">Learn more <i class="fas fa-arrow-right"></i></a>
           </article>
-  
-          
-        </div> <!-- .services-grid -->
-  
-      </div> 
-      <br/>
-      <br>
-      <br>
-      <br><!-- .services-container -->
-    </div> <!-- .services -->
- 
-<section class="section" id="section3">
-  <div class="testimonials">
-    <div class="testimonials-container">
-      <h2 class="testimonials-title">Testimonials</h2>
-      <div class="testimonials-ticker" aria-label="Client testimonials scrolling list">
-        <div class="testimonials-track">
-          <article class="testimonial">
-            <p class="testimonial-text">They revamped our site and Core Web Vitals skyrocketed. Traffic and conversions are up.</p>
-            <div class="testimonial-meta">— Priya, E‑commerce founder</div>
-          </article>
-          <article class="testimonial">
-            <p class="testimonial-text">Our support load dropped 40% after launching the Customer Support AI assistant.</p>
-            <div class="testimonial-meta">— Arjun, SaaS PM</div>
-          </article>
-          <article class="testimonial">
-            <p class="testimonial-text">Lightning‑fast Android build with a rock‑solid CI/CD. Release days are stress‑free now.</p>
-            <div class="testimonial-meta">— Neha, Product Lead</div>
-          </article>
-          <article class="testimonial">
-            <p class="testimonial-text">iOS app quality impressed our stakeholders. Polished UX and great accessibility.</p>
-            <div class="testimonial-meta">— Karan, Startup CTO</div>
-          </article>
-          <article class="testimonial">
-            <p class="testimonial-text">Clear communication, clean code, and on‑time delivery. Couldn’t ask for more.</p>
-            <div class="testimonial-meta">— Maya, Marketing Head</div>
-          </article>
-          <article class="testimonial">
-            <p class="testimonial-text">SEO and performance tuning paid off. We rank higher and pages feel instant.</p>
-            <div class="testimonial-meta">— Rohan, D2C Ops</div>
-          </article>
-          <article class="testimonial">
-            <p class="testimonial-text">They built our web platform from zero to launch with scale in mind. Great partner.</p>
-            <div class="testimonial-meta">— Aisha, Founder</div>
-          </article>
-          <article class="testimonial">
-            <p class="testimonial-text">The AI workflows save our team hours daily. Quick wins and compounding value.</p>
-            <div class="testimonial-meta">— Dev, Support Lead</div>
-          </article>
-          <article class="testimonial">
-            <p class="testimonial-text">Android + iOS parity shipped fast without sacrificing quality. Users love it.</p>
-            <div class="testimonial-meta">— Sanvi, Mobile PM</div>
-          </article>
-          <article class="testimonial">
-            <p class="testimonial-text">Fantastic attention to detail. From design systems to deployments—smooth.</p>
-            <div class="testimonial-meta">— Ishaan, Engineering Manager</div>
-          </article>
-          <!-- duplicate for seamless loop -->
-          <article class="testimonial" aria-hidden="true">
-            <p class="testimonial-text">They revamped our site and Core Web Vitals skyrocketed. Traffic and conversions are up.</p>
-            <div class="testimonial-meta">— Priya, E‑commerce founder</div>
-          </article>
-          <article class="testimonial" aria-hidden="true">
-            <p class="testimonial-text">Our support load dropped 40% after launching the Customer Support AI assistant.</p>
-            <div class="testimonial-meta">— Arjun, SaaS PM</div>
-          </article>
-          <article class="testimonial" aria-hidden="true">
-            <p class="testimonial-text">Lightning‑fast Android build with a rock‑solid CI/CD. Release days are stress‑free now.</p>
-            <div class="testimonial-meta">— Neha, Product Lead</div>
-          </article>
-          <article class="testimonial" aria-hidden="true">
-            <p class="testimonial-text">iOS app quality impressed our stakeholders. Polished UX and great accessibility.</p>
-            <div class="testimonial-meta">— Karan, Startup CTO</div>
-          </article>
-          <article class="testimonial" aria-hidden="true">
-            <p class="testimonial-text">Clear communication, clean code, and on‑time delivery. Couldn’t ask for more.</p>
-            <div class="testimonial-meta">— Maya, Marketing Head</div>
-          </article>
-          <article class="testimonial" aria-hidden="true">
-            <p class="testimonial-text">SEO and performance tuning paid off. We rank higher and pages feel instant.</p>
-            <div class="testimonial-meta">— Rohan, D2C Ops</div>
-          </article>
-          <article class="testimonial" aria-hidden="true">
-            <p class="testimonial-text">They built our web platform from zero to launch with scale in mind. Great partner.</p>
-            <div class="testimonial-meta">— Aisha, Founder</div>
-          </article>
-          <article class="testimonial" aria-hidden="true">
-            <p class="testimonial-text">The AI workflows save our team hours daily. Quick wins and compounding value.</p>
-            <div class="testimonial-meta">— Dev, Support Lead</div>
-          </article>
-          <article class="testimonial" aria-hidden="true">
-            <p class="testimonial-text">Android + iOS parity shipped fast without sacrificing quality. Users love it.</p>
-            <div class="testimonial-meta">— Sanvi, Mobile PM</div>
-          </article>
-          <article class="testimonial" aria-hidden="true">
-            <p class="testimonial-text">Fantastic attention to detail. From design systems to deployments—smooth.</p>
-            <div class="testimonial-meta">— Ishaan, Engineering Manager</div>
-          </article>
+
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- Footer Section -->
-<!-- Footer Section -->
-<section class="section footer" id="section4">
-  <footer class="footer-container">
-    
-    <div class="footer-message">
-      <h2>Thank You for Visiting ShonkuWeb</h2>
-      <p>We appreciate your time and interest. Let's build something extraordinary together — from concept to deployment, we're here to make it happen.</p>
+  </section>
+
+
+  <section class="brand-testimonials" id="section3">
+    <div class="brand-testimonials-container">
+      <h2 class="testimonials-title">What Founders Say</h2>
+      <div class="testimonials-ticker" aria-label="Client testimonials scrolling list"
+        style="overflow: hidden; mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);">
+        <div class="testimonials-track">
+
+          <!-- Original Testimonials -->
+          <article class="brand-testimonial-card">
+            <p class="testimonial-text">"They revamped our site and Core Web Vitals skyrocketed. Traffic and conversions
+              are up significantly."</p>
+            <div class="testimonial-meta">Priya, E‑commerce founder</div>
+          </article>
+
+          <article class="brand-testimonial-card">
+            <p class="testimonial-text">"Our support load dropped 40% after launching the Customer Support AI assistant.
+              A total game changer."</p>
+            <div class="testimonial-meta">Arjun, SaaS PM</div>
+          </article>
+
+          <article class="brand-testimonial-card">
+            <p class="testimonial-text">"Lightning‑fast Android build with a rock‑solid CI/CD. Release days are finally
+              stress‑free now."</p>
+            <div class="testimonial-meta">Neha, Product Lead</div>
+          </article>
+
+          <article class="brand-testimonial-card">
+            <p class="testimonial-text">"The iOS app quality impressed our stakeholders. Polished UX and great
+              accessibility features."</p>
+            <div class="testimonial-meta">Karan, Startup CTO</div>
+          </article>
+
+          <article class="brand-testimonial-card">
+            <p class="testimonial-text">"Clear communication, clean code, and on‑time delivery. Couldn’t ask for a
+              better partner."</p>
+            <div class="testimonial-meta">Maya, Marketing Head</div>
+          </article>
+
+          <!-- Duplicates for seamless scroll -->
+          <article class="brand-testimonial-card">
+            <p class="testimonial-text">"They revamped our site and Core Web Vitals skyrocketed. Traffic and conversions
+              are up significantly."</p>
+            <div class="testimonial-meta">Priya, E‑commerce founder</div>
+          </article>
+
+          <article class="brand-testimonial-card">
+            <p class="testimonial-text">"Our support load dropped 40% after launching the Customer Support AI assistant.
+              A total game changer."</p>
+            <div class="testimonial-meta">Arjun, SaaS PM</div>
+          </article>
+
+          <article class="brand-testimonial-card">
+            <p class="testimonial-text">"Lightning‑fast Android build with a rock‑solid CI/CD. Release days are finally
+              stress‑free now."</p>
+            <div class="testimonial-meta">Neha, Product Lead</div>
+          </article>
+
+          <article class="brand-testimonial-card">
+            <p class="testimonial-text">"The iOS app quality impressed our stakeholders. Polished UX and great
+              accessibility features."</p>
+            <div class="testimonial-meta">Karan, Startup CTO</div>
+          </article>
+
+          <article class="brand-testimonial-card">
+            <p class="testimonial-text">"Clear communication, clean code, and on‑time delivery. Couldn’t ask for a
+              better partner."</p>
+            <div class="testimonial-meta">Maya, Marketing Head</div>
+          </article>
+
+        </div>
+      </div>
     </div>
+  </section>
+  <!-- Footer Section -->
+  <!-- Footer Section -->
+  <section class="section footer" id="section4">
+    <footer class="footer-container">
 
-    <div class="footer-links">
-      <a href="aboutus.html">About Us</a>
-      <a href="terms&conditions.html">Terms & Conditions</a>
-      <a href="contactus.html">Contact Us</a>
-    </div>
+      <div class="footer-message">
+        <h2>Thank You for Visiting ShonkuWeb</h2>
+        <p>We appreciate your time and interest. Let's build something extraordinary together — from concept to
+          deployment, we're here to make it happen.</p>
+      </div>
 
-    <div class="footer-cta">
-      <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
-        <i class="fas fa-arrow-up" aria-hidden="true"></i>
-        Back to top
-      </a>
-    </div>
+      <div class="footer-links">
+        <a href="aboutus.html">About Us</a>
+        <a href="terms&conditions.html">Terms & Conditions</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
 
-    <div class="footer-socials">
-      <a href="https://x.com/shonkuweb" target="_blank" aria-label="X (Twitter)">
-        <i class="fab fa-x-twitter"></i>
-      </a>
-      <a href="https://youtube.com/@ShonkuWeb" target="_blank" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://instagram.com/shonkuweb" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
+      <div class="footer-cta">
+        <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
+          <i class="fas fa-arrow-up" aria-hidden="true"></i>
+          Back to top
+        </a>
+      </div>
 
-    <p class="footer-copy">© 2025 ShonkuWeb. All rights reserved.</p>
-  </footer>
-</section>
+      <div class="footer-socials">
+        <a href="https://x.com/shonkuweb" target="_blank" aria-label="X (Twitter)">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@ShonkuWeb" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://instagram.com/shonkuweb" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
 
-    <script src="script.js"></script>
+      <p class="footer-copy">© 2025 ShonkuWeb. All rights reserved.</p>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

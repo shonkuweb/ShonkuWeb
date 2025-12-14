@@ -1,259 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Web Development Agency</title>
-    <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Web Development Agency</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <div id="section1"></div>
-        <header>
-  <nav class="navbar">
-    <div class="logo">ShonkuWeb</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutus.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contactus.html">Contact Us</a></li>
-      <li><a href="terms&conditions.html">Terms</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
-</header>
-<!-- Fullscreen Sections -->
-<!-- Contact Section -->
-<section class="section" id="section2">
-  <div class="contact-container">
-    <h2 class="contact-title">Contact Us</h2>
-    <p class="contact-subtitle">Tell us about your project — we'll get back to you within one business day.</p>
-
-    <form class="contact-form" action="#" method="post" novalidate>
-      <div class="form-row">
-        <label class="form-field">
-          <span class="form-label">Business Name</span>
-          <input type="text" name="business_name" placeholder="Your business or company name" required>
-        </label>
-
-        <label class="form-field">
-          <span class="form-label">Mobile Number</span>
-          <input type="tel" name="mobile" id="mobileInput" placeholder="10-digit mobile number" required pattern="[0-9]{10}" minlength="10" maxlength="10" inputmode="numeric" title="Please enter exactly 10 digits (numbers only).">
-        </label>
+  <div id="section1"></div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">ShonkuWeb</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="terms&conditions.html">Terms</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-
-      <div class="form-row single">
-        <label class="form-field">
-          <span class="form-label">Email</span>
-          <input type="email" name="email" placeholder="you@company.com" required>
-        </label>
-      </div>
-
-      <div class="form-row single">
-        <label class="form-field">
-          <span class="form-label">Services</span>
-          <select name="service" required>
-            <option value="">-- Select a service --</option>
-            <option value="web_development">Web Development</option>
-            <option value="ios_development">iOS Development</option>
-            <option value="android_development">Android Development</option>
-            <option value="Customer Support AI">Customer Support AI</option>
-          </select>
-        </label>
-      </div>
-
-      <div class="form-row single">
-        <label class="form-field">
-          <span class="form-label">Message (optional)</span>
-          <textarea name="message" rows="5" placeholder="Brief description of your project, timeline and budget (optional)"></textarea>
-        </label>
-      </div>
-
-      <div class="form-actions">
-        <button type="submit" class="btn-primary">Send Message</button>
-      </div>
-    </form>
-
-    <div class="contact-info">
-      <div class="contact-info-item">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:shonkuweb@gmail.com">shonkuweb@gmail.com</a>
-      </div>
-      <div class="contact-info-item">
-        <i class="fas fa-phone"></i>
-        <a href="tel:+916289417338">+91 6289417338</a>
-      </div>
-      <div class="contact-info-item">
-        <i class="fab fa-whatsapp"></i>
-        <a href="https://wa.me/916289417338" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp us</a>
-      </div>
-    </div>
+    </nav>
+  </header>
+  <div class="redevelopment-banner">
+    ⚠️ This website is under re-development by ShonkuWeb as we are adding new service offers to our clients.
   </div>
+  <!-- Fullscreen Sections -->
+  <!-- Contact Section -->
+  <section class="section" id="section2">
+    <div class="contact-container">
+      <h2 class="contact-title">Contact Us</h2>
+      <p class="contact-subtitle">Tell us about your project — we'll get back to you within one business day.</p>
 
-  <!-- Toast notification -->
-  <div id="toast" class="toast" role="alert" aria-live="polite">
-    <span id="toast-message"></span>
-  </div>
-</section>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-row">
+          <label class="form-field">
+            <span class="form-label">Business Name</span>
+            <input type="text" name="business_name" placeholder="Your business or company name" required>
+          </label>
 
-<section class="section footer" id="section4">
-  <footer class="footer-container">
-    
-    <div class="footer-message">
-      <h2>Thank You for Visiting ShonkuWeb</h2>
-      <p>We appreciate your time and interest. Let's build something extraordinary together — from concept to deployment, we're here to make it happen.</p>
+          <label class="form-field">
+            <span class="form-label">Mobile Number</span>
+            <input type="tel" name="mobile" id="mobileInput" placeholder="10-digit mobile number" required
+              pattern="[0-9]{10}" minlength="10" maxlength="10" inputmode="numeric"
+              title="Please enter exactly 10 digits (numbers only).">
+          </label>
+        </div>
+
+        <div class="form-row single">
+          <label class="form-field">
+            <span class="form-label">Email</span>
+            <input type="email" name="email" placeholder="you@company.com" required>
+          </label>
+        </div>
+
+        <div class="form-row single">
+          <label class="form-field">
+            <span class="form-label">Services</span>
+            <select name="service" required>
+              <option value="">-- Select a service --</option>
+              <option value="web_development">Web Development</option>
+              <option value="ios_development">iOS Development</option>
+              <option value="android_development">Android Development</option>
+              <option value="Customer Support AI">Customer Support AI</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="form-row single">
+          <label class="form-field">
+            <span class="form-label">Message (optional)</span>
+            <textarea name="message" rows="5"
+              placeholder="Brief description of your project, timeline and budget (optional)"></textarea>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Send Message</button>
+        </div>
+      </form>
+
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:shonkuweb@gmail.com">shonkuweb@gmail.com</a>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+916289417338">+91 6289417338</a>
+        </div>
+        <div class="contact-info-item">
+          <i class="fab fa-whatsapp"></i>
+          <a href="https://wa.me/916289417338" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp
+            us</a>
+        </div>
+      </div>
     </div>
 
-    <div class="footer-links">
-      <a href="aboutus.html">About Us</a>
-      <a href="terms&conditions.html">Terms & Conditions</a>
-      <a href="contactus.html">Contact Us</a>
+    <!-- Toast notification -->
+    <div id="toast" class="toast" role="alert" aria-live="polite">
+      <span id="toast-message"></span>
     </div>
+  </section>
 
-    <div class="footer-cta">
-      <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
-        <i class="fas fa-arrow-up" aria-hidden="true"></i>
-        Back to top
-      </a>
-    </div>
+  <section class="section footer" id="section4">
+    <footer class="footer-container">
 
-    <div class="footer-socials">
-      <a href="https://x.com/shonkuweb" target="_blank" aria-label="X (Twitter)">
-        <i class="fab fa-x-twitter"></i>
-      </a>
-      <a href="https://youtube.com/@ShonkuWeb" target="_blank" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://instagram.com/shonkuweb" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
+      <div class="footer-message">
+        <h2>Thank You for Visiting ShonkuWeb</h2>
+        <p>We appreciate your time and interest. Let's build something extraordinary together — from concept to
+          deployment, we're here to make it happen.</p>
+      </div>
 
-    <p class="footer-copy">© 2025 ShonkuWeb. All rights reserved.</p>
-  </footer>
-</section>
-<script src="script.js"></script>
-<!-- Firebase Firestore submit (page-specific) -->
-<script type="module">
-  import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js';
-  import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js';
+      <div class="footer-links">
+        <a href="aboutus.html">About Us</a>
+        <a href="terms&conditions.html">Terms & Conditions</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyDsT0k5sRTIp9KEFKc5z0S17veGdxo5py4",
-    authDomain: "shonkuwebcontactusform.firebaseapp.com",
-    projectId: "shonkuwebcontactusform",
-    storageBucket: "shonkuwebcontactusform.firebasestorage.app",
-    messagingSenderId: "422539847891",
-    appId: "1:422539847891:web:64658ab417cb622cf60c26"
-  };
+      <div class="footer-cta">
+        <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
+          <i class="fas fa-arrow-up" aria-hidden="true"></i>
+          Back to top
+        </a>
+      </div>
 
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
+      <div class="footer-socials">
+        <a href="https://x.com/shonkuweb" target="_blank" aria-label="X (Twitter)">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@ShonkuWeb" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://instagram.com/shonkuweb" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
 
-  // Toast notification function
-  function showToast(message, isError = false) {
-    const toast = document.getElementById('toast');
-    const toastMessage = document.getElementById('toast-message');
-    if (!toast || !toastMessage) return;
+      <p class="footer-copy">© 2025 ShonkuWeb. All rights reserved.</p>
+    </footer>
+  </section>
+  <script src="script.js"></script>
+  <!-- Firebase Firestore submit (page-specific) -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js';
+    import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js';
 
-    toastMessage.textContent = message;
-    toast.classList.remove('error');
-    if (isError) {
-      toast.classList.add('error');
+    const firebaseConfig = {
+      apiKey: "AIzaSyDsT0k5sRTIp9KEFKc5z0S17veGdxo5py4",
+      authDomain: "shonkuwebcontactusform.firebaseapp.com",
+      projectId: "shonkuwebcontactusform",
+      storageBucket: "shonkuwebcontactusform.firebasestorage.app",
+      messagingSenderId: "422539847891",
+      appId: "1:422539847891:web:64658ab417cb622cf60c26"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Toast notification function
+    function showToast(message, isError = false) {
+      const toast = document.getElementById('toast');
+      const toastMessage = document.getElementById('toast-message');
+      if (!toast || !toastMessage) return;
+
+      toastMessage.textContent = message;
+      toast.classList.remove('error');
+      if (isError) {
+        toast.classList.add('error');
+      }
+
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 4000);
     }
 
-    toast.classList.add('show');
-    setTimeout(() => {
-      toast.classList.remove('show');
-    }, 4000);
-  }
-
-  // Auto-format mobile input: only allow digits, max 10
-  const mobileInput = document.getElementById('mobileInput');
-  if (mobileInput) {
-    mobileInput.addEventListener('input', (e) => {
-      // Remove any non-digit characters
-      let value = e.target.value.replace(/\D/g, '');
-      // Limit to 10 digits
-      if (value.length > 10) {
-        value = value.slice(0, 10);
-      }
-      e.target.value = value;
-    });
-
-    // Prevent paste of non-numeric content
-    mobileInput.addEventListener('paste', (e) => {
-      e.preventDefault();
-      const paste = (e.clipboardData || window.clipboardData).getData('text');
-      const digits = paste.replace(/\D/g, '').slice(0, 10);
-      mobileInput.value = digits;
-    });
-  }
-
-  const form = document.querySelector('.contact-form');
-  if (form) {
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const submitBtn = form.querySelector('button[type="submit"]');
-      const originalText = submitBtn ? submitBtn.textContent : '';
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending...';
-      }
-      try {
-        // Block submission if required inputs are not valid
-        if (!form.checkValidity()) {
-          if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalText || 'Send Message';
-          }
-          form.reportValidity();
-          return;
+    // Auto-format mobile input: only allow digits, max 10
+    const mobileInput = document.getElementById('mobileInput');
+    if (mobileInput) {
+      mobileInput.addEventListener('input', (e) => {
+        // Remove any non-digit characters
+        let value = e.target.value.replace(/\D/g, '');
+        // Limit to 10 digits
+        if (value.length > 10) {
+          value = value.slice(0, 10);
         }
+        e.target.value = value;
+      });
 
-        const formData = new FormData(form);
-        // Normalize and validate mobile to exactly 10 digits
-        const rawMobile = (formData.get('mobile')?.toString() || '').replace(/\D/g, '');
-        if (rawMobile.length !== 10) {
-          if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalText || 'Send Message';
-          }
-          showToast('Please enter a valid 10-digit mobile number.', true);
-          const mobileField = document.getElementById('mobileInput');
-          if (mobileField) {
-            mobileField.focus();
-          }
-          return;
-        }
-        const data = {
-          businessName: formData.get('business_name')?.toString().trim() || '',
-          mobile: rawMobile,
-          email: formData.get('email')?.toString().trim() || '',
-          service: formData.get('service')?.toString() || '',
-          message: formData.get('message')?.toString().trim() || '',
-          page: window.location.href,
-          userAgent: navigator.userAgent,
-          createdAt: serverTimestamp()
-        };
-        await addDoc(collection(db, 'contact_messages'), data);
-        showToast('Message sent successfully! We will contact you soon.');
-        form.reset();
-      } catch (err) {
-        console.error('Contact form submission failed:', err);
-        showToast('Something went wrong. Please try again later.', true);
-      } finally {
+      // Prevent paste of non-numeric content
+      mobileInput.addEventListener('paste', (e) => {
+        e.preventDefault();
+        const paste = (e.clipboardData || window.clipboardData).getData('text');
+        const digits = paste.replace(/\D/g, '').slice(0, 10);
+        mobileInput.value = digits;
+      });
+    }
+
+    const form = document.querySelector('.contact-form');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn ? submitBtn.textContent : '';
         if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalText || 'Send Message';
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
         }
-      }
-    });
-  }
-</script>
+        try {
+          // Block submission if required inputs are not valid
+          if (!form.checkValidity()) {
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.textContent = originalText || 'Send Message';
+            }
+            form.reportValidity();
+            return;
+          }
+
+          const formData = new FormData(form);
+          // Normalize and validate mobile to exactly 10 digits
+          const rawMobile = (formData.get('mobile')?.toString() || '').replace(/\D/g, '');
+          if (rawMobile.length !== 10) {
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.textContent = originalText || 'Send Message';
+            }
+            showToast('Please enter a valid 10-digit mobile number.', true);
+            const mobileField = document.getElementById('mobileInput');
+            if (mobileField) {
+              mobileField.focus();
+            }
+            return;
+          }
+          const data = {
+            businessName: formData.get('business_name')?.toString().trim() || '',
+            mobile: rawMobile,
+            email: formData.get('email')?.toString().trim() || '',
+            service: formData.get('service')?.toString() || '',
+            message: formData.get('message')?.toString().trim() || '',
+            page: window.location.href,
+            userAgent: navigator.userAgent,
+            createdAt: serverTimestamp()
+          };
+          await addDoc(collection(db, 'contact_messages'), data);
+          showToast('Message sent successfully! We will contact you soon.');
+          form.reset();
+        } catch (err) {
+          console.error('Contact form submission failed:', err);
+          showToast('Something went wrong. Please try again later.', true);
+        } finally {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText || 'Send Message';
+          }
+        }
+      });
+    }
+  </script>
 </body>
+
 </html>

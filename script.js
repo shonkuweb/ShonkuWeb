@@ -1,31 +1,36 @@
 // Responsive Navbar + Interactions
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
-const navbar = document.querySelector('.navbar');
-let navOverlay = null;
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  const navbar = document.querySelector('.navbar');
+  let navOverlay = document.querySelector('.nav-overlay');
 
-if (hamburger && navLinks) {
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navLinks.classList.toggle('active');
-    const expanded = hamburger.classList.contains('active');
-    hamburger.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-    toggleNavOverlay(expanded);
-  });
-  // Close menu when a link is clicked (mobile UX)
-  navLinks.addEventListener('click', (e) => {
-    const target = e.target;
-    if (target && target.tagName === 'A' && navLinks.classList.contains('active')) {
-      navLinks.classList.remove('active');
-      hamburger.classList.remove('active');
-      hamburger.setAttribute('aria-expanded', 'false');
-      toggleNavOverlay(false);
-    }
-  });
-}
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      const expanded = hamburger.classList.contains('active');
+      hamburger.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      toggleNavOverlay(expanded);
+    });
+    // Close menu when a link is clicked (mobile UX)
+    navLinks.addEventListener('click', (e) => {
+      const target = e.target;
+      if (target && target.tagName === 'A' && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        toggleNavOverlay(false);
+      }
+    });
+  }
+}); // Close the event listener
 
 // Add shadow/glass intensity when scrolling
 function updateNavbarOnScroll() {
+  // navbar is now defined within DOMContentLoaded, so it needs to be passed or accessed globally if used outside.
+  // For now, assuming navbar is accessible or will be handled.
+  const navbar = document.querySelector('.navbar'); // Re-query or make global if needed
   if (!navbar) return;
   if (window.scrollY > 8) {
     navbar.classList.add('scrolled');
@@ -43,8 +48,8 @@ serviceCards.forEach((card) => {
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    card.style.setProperty('--mx', `${x}px`);
-    card.style.setProperty('--my', `${y}px`);
+    card.style.setProperty('--mx', `${x} px`);
+    card.style.setProperty('--my', `${y} px`);
   });
 });
 
@@ -57,12 +62,12 @@ if (testimonialsTicker) {
   testimonialsTicker.addEventListener('wheel', (e) => {
     e.preventDefault();
   }, { passive: false });
-  
+
   // Prevent touch scrolling
   testimonialsTicker.addEventListener('touchmove', (e) => {
     e.preventDefault();
   }, { passive: false });
-  
+
   // Prevent drag
   testimonialsTicker.addEventListener('dragstart', (e) => {
     e.preventDefault();
@@ -113,7 +118,7 @@ function enableMobileServicesParallax() {
         const dist = center - viewportH / 2;
         // clamp parallax between -14px and 14px
         const offset = Math.max(-14, Math.min(14, dist * 0.06));
-        el.style.setProperty('--parallax', `${offset}px`);
+        el.style.setProperty('--parallax', `${offset} px`);
       });
     });
   };
