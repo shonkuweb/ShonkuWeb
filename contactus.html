@@ -20,6 +20,8 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="contactus.html">Contact Us</a></li>
         <li><a href="terms&conditions.html">Terms</a></li>
+        <li><a href="cancellation-refund-policy.html">Cancellation</a></li>
+        <li><a href="shipping-delivery-policy.html">Shipping Policy</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
         <span></span>
@@ -121,6 +123,7 @@
       <div class="footer-links">
         <a href="aboutus.html">About Us</a>
         <a href="terms&conditions.html">Terms & Conditions</a>
+        <a href="cancellation-refund-policy.html">Cancellation Policy</a>
         <a href="contactus.html">Contact Us</a>
       </div>
 
@@ -148,22 +151,7 @@
   </section>
   <script src="script.js"></script>
   <!-- Firebase Firestore submit (page-specific) -->
-  <script type="module">
-    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js';
-    import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js';
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyDsT0k5sRTIp9KEFKc5z0S17veGdxo5py4",
-      authDomain: "shonkuwebcontactusform.firebaseapp.com",
-      projectId: "shonkuwebcontactusform",
-      storageBucket: "shonkuwebcontactusform.firebasestorage.app",
-      messagingSenderId: "422539847891",
-      appId: "1:422539847891:web:64658ab417cb622cf60c26"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-
+  <script>
     // Toast notification function
     function showToast(message, isError = false) {
       const toast = document.getElementById('toast');
@@ -240,17 +228,10 @@
             }
             return;
           }
-          const data = {
-            businessName: formData.get('business_name')?.toString().trim() || '',
-            mobile: rawMobile,
-            email: formData.get('email')?.toString().trim() || '',
-            service: formData.get('service')?.toString() || '',
-            message: formData.get('message')?.toString().trim() || '',
-            page: window.location.href,
-            userAgent: navigator.userAgent,
-            createdAt: serverTimestamp()
-          };
-          await addDoc(collection(db, 'contact_messages'), data);
+
+          // Simulate network delay
+          await new Promise(resolve => setTimeout(resolve, 1000));
+
           showToast('Message sent successfully! We will contact you soon.');
           form.reset();
         } catch (err) {

@@ -3,14 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Checkout - ShonkuWeb</title>
-    <link rel="stylesheet" href="style.css?v=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cancellation & Refund Policy - ShonkuWeb</title>
+    <link rel="stylesheet" href="style.css?v=3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .policy-content {
+            max-width: 800px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+            color: var(--text, #eaeaea);
+        }
+
+        .policy-content h1 {
+            margin-bottom: 20px;
+            color: var(--brand, #0066ff);
+        }
+
+        .policy-content p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="section1"></div>
     <header>
         <nav class="navbar">
             <div class="logo">ShonkuWeb</div>
@@ -30,43 +47,64 @@
             </div>
         </nav>
     </header>
+
     <div class="redevelopment-banner">
         ⚠️ This website is under re-development by ShonkuWeb as we are adding new service offers to our clients.
     </div>
 
-    <main class="payment-wrapper">
-        <section class="payment-container" style="text-align: center; padding: 100px 20px;">
-            <div class="coming-soon-message">
-                <i class="fas fa-wallet" style="font-size: 4rem; color: #4285F4; margin-bottom: 20px;"></i>
-                <h1 style="font-size: 2.5rem; margin-bottom: 15px;">Google Pay Wallet Integration</h1>
-                <p style="font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto;">
-                    We will integrate the Google Pay Wallet API checkout system here once approved.
-                    <br><br>
-                    <strong>Coming Soon</strong>
-                </p>
-            </div>
-        </section>
-    </main>
+    <section class="policy-content">
+        <h1>Cancellation & Refund Policy</h1>
+        <p>Last updated on Dec 22nd 2025</p>
 
-    <!-- Footer Section -->
+        <p>SHIBAM MONDAL believes in helping its customers as far as possible, and has therefore a liberal cancellation
+            policy. Under this policy:</p>
+
+        <p>Cancellations will be considered only if the request is made within Not Applicable of placing the order.
+            However, the cancellation request may not be entertained if the orders have been communicated to the
+            vendors/merchants and they have initiated the process of shipping them.</p>
+
+        <p>SHIBAM MONDAL does not accept cancellation requests for perishable items like flowers, eatables etc. However,
+            refund/replacement can be made if the customer establishes that the quality of product delivered is not
+            good.</p>
+
+        <p>In case of receipt of damaged or defective items please report the same to our Customer Service team. The
+            request will, however, be entertained once the merchant has checked and determined the same at his own end.
+            This should be reported within Not Applicable of receipt of the products.</p>
+
+        <p>In case you feel that the product received is not as shown on the site or as per your expectations, you must
+            bring it to the notice of our customer service within Not Applicable of receiving the product. The Customer
+            Service Team after looking into your complaint will take an appropriate decision.</p>
+
+        <p>In case of complaints regarding products that come with a warranty from manufacturers, please refer the issue
+            to them.</p>
+
+        <p>In case of any Refunds approved by the SHIBAM MONDAL, it’ll take Not Applicable for the refund to be
+            processed to the end customer.</p>
+    </section>
+
     <section class="section footer" id="section4">
         <footer class="footer-container">
+
             <div class="footer-message">
                 <h2>Thank You for Visiting ShonkuWeb</h2>
                 <p>We appreciate your time and interest. Let's build something extraordinary together — from concept to
                     deployment, we're here to make it happen.</p>
             </div>
+
             <div class="footer-links">
                 <a href="aboutus.html">About Us</a>
                 <a href="terms&conditions.html">Terms & Conditions</a>
                 <a href="cancellation-refund-policy.html">Cancellation Policy</a>
                 <a href="contactus.html">Contact Us</a>
             </div>
+
             <div class="footer-cta">
                 <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
-                    <i class="fas fa-arrow-up" aria-hidden="true"></i> Back to top
+                    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                    Back to top
                 </a>
             </div>
+
             <div class="footer-socials">
                 <a href="https://x.com/shonkuweb" target="_blank" aria-label="X (Twitter)">
                     <i class="fab fa-x-twitter"></i>
@@ -78,47 +116,12 @@
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
+
             <p class="footer-copy">© 2025 ShonkuWeb. All rights reserved.</p>
         </footer>
     </section>
 
     <script src="script.js"></script>
-    <script>
-        // Simple script to handle URL params for plan selection
-        document.addEventListener('DOMContentLoaded', () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const plan = urlParams.get('plan');
-
-            const planNameEl = document.getElementById('planName');
-            const planPriceEl = document.getElementById('planPrice');
-            const subtotalEl = document.getElementById('subtotal');
-            const taxEl = document.getElementById('tax');
-            const totalEl = document.getElementById('total');
-
-            let price = 0;
-            let name = "Select a Plan";
-
-            if (plan === 'starting') {
-                name = "Starting Plan";
-                price = 19900;
-            } else if (plan === 'medium') {
-                name = "Medium Plan";
-                price = 25900;
-            }
-
-            const tax = price * 0.18;
-            const total = price + tax;
-
-            planNameEl.textContent = name;
-
-            const formatCurrency = (num) => '₹' + num.toLocaleString('en-IN');
-
-            planPriceEl.textContent = formatCurrency(price);
-            subtotalEl.textContent = formatCurrency(price);
-            taxEl.textContent = formatCurrency(tax);
-            totalEl.textContent = formatCurrency(total);
-        });
-    </script>
 </body>
 
 </html>
