@@ -4,7 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Web Development Agency</title>
+  <meta name="description"
+    content="Contact ShonkuWeb - Get in touch for web development, e-commerce, and digital solutions. We respond within one business day.">
+  <meta name="keywords" content="contact ShonkuWeb, web development inquiry, get quote, digital solutions">
+  <meta property="og:title" content="Contact Us | ShonkuWeb">
+  <meta property="og:description" content="Tell us about your project. We'll get back to you within one business day.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://shonkuweb.com/contactus.html">
+  <title>Contact Us | ShonkuWeb</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -30,9 +37,7 @@
       </div>
     </nav>
   </header>
-  <div class="redevelopment-banner">
-    ⚠️ This website is under re-development by ShonkuWeb as we are adding new service offers to our clients.
-  </div>
+
   <!-- Fullscreen Sections -->
   <!-- Contact Section -->
   <section class="section" id="section2">
@@ -109,6 +114,9 @@
     <div id="toast" class="toast" role="alert" aria-live="polite">
       <span id="toast-message"></span>
     </div>
+
+    <!-- Hidden iframe for Google Sheets submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
   </section>
 
   <section class="section footer" id="section4">
@@ -135,13 +143,13 @@
       </div>
 
       <div class="footer-socials">
-        <a href="https://x.com/shonkuweb" target="_blank" aria-label="X (Twitter)">
+        <a href="https://x.com/shonkuweb" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
           <i class="fab fa-x-twitter"></i>
         </a>
-        <a href="https://youtube.com/@ShonkuWeb" target="_blank" aria-label="YouTube">
+        <a href="https://youtube.com/@ShonkuWeb" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
           <i class="fab fa-youtube"></i>
         </a>
-        <a href="https://instagram.com/shonkuweb" target="_blank" aria-label="Instagram">
+        <a href="https://instagram.com/shonkuweb" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <i class="fab fa-instagram"></i>
         </a>
       </div>
@@ -193,6 +201,9 @@
     }
 
     const form = document.querySelector('.contact-form');
+    // Google Apps Script Web App URL
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz2lQHdzcW6ioUSG1LijYZkVSpmqm968aEZL8TXm60o-AnHbzQ9VCR7GmQiLfpOFvMx/exec';
+
     if (form) {
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -229,7 +240,35 @@
             return;
           }
 
-          // Simulate network delay
+          // Create a hidden form to submit to Google Sheets via iframe
+          const hiddenForm = document.createElement('form');
+          hiddenForm.method = 'POST';
+          hiddenForm.action = GOOGLE_SCRIPT_URL;
+          hiddenForm.target = 'hidden_iframe';
+          hiddenForm.style.display = 'none';
+
+          // Add form fields
+          const fields = {
+            business_name: formData.get('business_name') || '',
+            mobile: rawMobile,
+            email: formData.get('email') || '',
+            service: formData.get('service') || '',
+            message: formData.get('message') || ''
+          };
+
+          for (const [key, value] of Object.entries(fields)) {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = key;
+            input.value = value;
+            hiddenForm.appendChild(input);
+          }
+
+          document.body.appendChild(hiddenForm);
+          hiddenForm.submit();
+          document.body.removeChild(hiddenForm);
+
+          // Wait a moment for submission to complete
           await new Promise(resolve => setTimeout(resolve, 1000));
 
           showToast('Message sent successfully! We will contact you soon.');

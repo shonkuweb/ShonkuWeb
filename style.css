@@ -38,16 +38,15 @@ body {
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.5;
-  padding-top: 120px;
-  /* space for fixed navbar + redevelopment banner */
+  padding-top: 70px;
+  /* space for fixed navbar */
 }
 
-/* ---------- REDEVELOPMENT BANNER (Global) ---------- */
+/* ---------- REDEVELOPMENT BANNER (Disabled for Production) ---------- */
+/* 
 .redevelopment-banner {
   position: absolute;
-  /* Changed from fixed so it scrolls away */
   top: 70px;
-  /* Below the 70px navbar */
   left: 0;
   width: 100%;
   background: var(--gradient-primary);
@@ -57,7 +56,6 @@ body {
   font-size: 0.95rem;
   font-weight: 600;
   z-index: 990;
-  /* Just below navbar (1000) */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   box-sizing: border-box;
@@ -75,16 +73,12 @@ body {
     transform: translateY(0);
   }
 }
+*/
 
 @media (max-width: 768px) {
   body {
-    padding-top: 140px;
-    /* More space on mobile if banner wraps */
-  }
-
-  .redevelopment-banner {
-    font-size: 0.85rem;
-    padding: 10px 16px;
+    padding-top: 70px;
+    /* Navbar only */
   }
 }
 
