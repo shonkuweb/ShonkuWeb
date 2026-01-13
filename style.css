@@ -808,6 +808,18 @@ body {
       transparent 60%);
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.founders a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.founders a:hover {
+  text-decoration: underline;
 }
 
 .story-card:hover::after {
