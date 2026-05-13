@@ -1,0 +1,14 @@
+# Apache / Hostinger: serve clean URLs and redirect legacy *.html links (301).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteRule ^index\.html$ / [R=301,L]
+  RewriteRule ^aboutus\.html$ /aboutus/ [R=301,L]
+  RewriteRule ^services\.html$ /services/ [R=301,L]
+  RewriteRule ^contactus\.html$ /contactus/ [R=301,L]
+  RewriteRule ^cancellation-refund-policy\.html$ /cancellation-refund-policy/ [R=301,L]
+  RewriteRule ^shipping-delivery-policy\.html$ /shipping-delivery-policy/ [R=301,L]
+  RewriteRule ^payment\.html$ /payment/ [R=301,L,QSA]
+  RewriteRule ^terms&conditions\.html$ /terms&conditions/ [R=301,L,NE]
+</IfModule>

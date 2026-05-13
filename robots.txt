@@ -5,4 +5,4 @@ Allow: /
 Sitemap: https://shonkuweb.com/sitemap.xml
 
 # Disallow admin and internal pages
-Disallow: /payment.html
+Disallow: /payment/
