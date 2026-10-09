@@ -3,18 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="description"
-    content="ShonkuWeb services - E-commerce development, web applications, and custom digital solutions. View our pricing plans and start your project today.">
-  <meta name="keywords" content="e-commerce development, web development services, website pricing, ShonkuWeb">
-  <meta property="og:title" content="Services | ShonkuWeb">
+    content="Explore ShonkuWeb's AI-first services: Production-grade Customer Support AI Agents, bespoke Custom AI Automations, and full-stack AI engineering for high-growth enterprises.">
+  <meta name="keywords"
+    content="Customer Support AI Agent, Custom AI Automations, Enterprise AI Studio, Autonomous Workflows, LLM Systems, ShonkuWeb">
+  <meta property="og:title" content="Services — Customer Support AI Agents & Custom AI Automations | ShonkuWeb">
   <meta property="og:description"
-    content="Premium e-commerce and web development services. Scalable, secure, and SEO-optimized solutions.">
+    content="Deploy production-grade Customer Support AI Agents and bespoke Custom AI Automations. Zero manual toil, 24/7 autonomous scale.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://shonkuweb.com/services/">
-  <title>Services | ShonkuWeb</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>Services — Customer Support AI Agents & Custom AI Automations | ShonkuWeb</title>
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+
   <!-- Vercel Analytics -->
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -28,200 +35,403 @@
 </head>
 
 <body>
-  <div id="section1"></div>
+  <!-- Header / Navigation -->
   <header>
     <nav class="navbar">
-      <div class="logo">ShonkuWeb</div>
+      <a href="/" class="logo-container">
+        <div class="logo-icon">
+          <i class="fas fa-sparkles"></i>
+        </div>
+        <span class="logo-text">ShonkuWeb</span>
+        <span class="logo-tag">AI STUDIO</span>
+      </a>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="/">Home</a></li>
+        <li><a href="/services/" class="active">Services</a></li>
         <li><a href="/aboutus/">About Us</a></li>
-        <li><a href="/services/">Services</a></li>
+        <li><a href="/bidhushekhar/">BidhuShekar <span class="badge badge-purple" style="font-size: 0.65rem; padding: 2px 6px;">LAB</span></a></li>
         <li><a href="/contactus/">Contact Us</a></li>
-        <li><a href="/terms&amp;conditions/">Terms</a></li>
-        <li><a href="/cancellation-refund-policy/">Cancellation</a></li>
-        <li><a href="/shipping-delivery-policy/">Shipping Policy</a></li>
       </ul>
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <div class="nav-actions">
+        <a href="/contactus/" class="btn btn-primary btn-sm">
+          <span>Book Strategy Call</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   </header>
 
+  <main>
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+      <div class="status-pill">
+        <span class="pulse-dot"></span>
+        <span>Production-Ready AI Engineering</span>
+      </div>
 
+      <h1 class="hero-headline">
+        Autonomous Agents &<br>
+        <span class="gradient-text">Custom AI Automations.</span>
+      </h1>
 
-  <!-- Changed class from 'red-theme' to 'services-theme' -->
-  <main class="services-wrapper services-theme">
-    <!-- Brand Theme Hero Section -->
-    <section class="brand-hero">
-      <div class="hero-bg-glow"></div>
-      <div class="hero-content">
+      <p class="hero-subtitle">
+        We specialize in architecting, training, and deploying intelligent AI systems that operate with sub-second latency, zero hallucinations, and deep integration into your company’s toolchain.
+      </p>
 
+      <div class="hero-cta-group">
+        <a href="/contactus/" class="btn btn-primary btn-lg">
+          <span>Schedule Scoping Call</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#customer-support-ai" class="btn btn-secondary btn-lg">
+          <span>Browse Capabilities</span>
+          <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
+    </section>
 
-        <div class="trust-badge">
-          <span class="trust-dot"></span>
-          <span>Trusted by 100+ Growth Leaders</span>
+    <!-- Deep Dive 1: Customer Support AI Agents -->
+    <section class="service-deep-dive" id="customer-support-ai">
+      <div class="deep-dive-card">
+        <div class="deep-dive-grid">
+          <div>
+            <div class="card-badge-row">
+              <span class="badge badge-blue"><i class="fas fa-headset"></i> Flagship Service</span>
+              <span class="badge badge-emerald">24/7 Multi-Channel</span>
+            </div>
+            
+            <h2 class="deep-dive-title">Customer Support AI Agents</h2>
+            <p class="deep-dive-text">
+              Traditional chatbots rely on brittle decision trees that frustrate users. We engineer autonomous agents powered by modern LLMs and custom Retrieval-Augmented Generation (RAG) that truly understand customer intent, solve technical problems, execute back-office actions, and speak in your brand’s exact voice.
+            </p>
+
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-title"><i class="fas fa-book-bookmark" style="color: var(--brand-blue);"></i> Grounded Knowledge RAG</div>
+                <div class="spec-desc">Ingests help centers, technical docs, Notion, and databases. Answers are strictly verified with direct citations to source docs.</div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-title"><i class="fas fa-plug" style="color: var(--brand-indigo);"></i> Action Tool Calling</div>
+                <div class="spec-desc">Securely interfaces with Stripe, Shopify, Zendesk, and PostgreSQL to update addresses, issue RMA tags, and modify accounts.</div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-title"><i class="fas fa-comments" style="color: var(--brand-emerald);"></i> Omni-Channel Deployment</div>
+                <div class="spec-desc">Live on your website chat widget, WhatsApp Business API, Slack communities, Discord, and incoming support inboxes.</div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-title"><i class="fas fa-user-shield" style="color: var(--brand-violet);"></i> Graceful Human Handoff</div>
+                <div class="spec-desc">Real-time sentiment monitoring detects escalations immediately, packaging a summarized dossier directly to your human agents.</div>
+              </div>
+            </div>
+
+            <a href="/contactus/?service=customer_support_ai" class="btn btn-primary">
+              <span>Deploy a Customer Support Agent</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Technical Architecture Visual / Code Mockup -->
+          <div class="deep-dive-visual">
+            <div style="font-size: 0.82rem; font-weight: 700; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em;">
+              Agent Execution Architecture
+            </div>
+            <div class="code-mockup">
+              <span style="color: #6ee7b7;">// Customer Support Agent Workflow</span><br>
+              <span style="color: #93c5fd;">const</span> agent = <span style="color: #fde047;">new</span> ShonkuAgent({<br>
+              &nbsp;&nbsp;role: <span style="color: #fca5a5;">"Tier-1 Autonomous Specialist"</span>,<br>
+              &nbsp;&nbsp;vectorStore: <span style="color: #c4b5fd;">EnterpriseKnowledgeBase</span>,<br>
+              &nbsp;&nbsp;guardrails: [<span style="color: #fca5a5;">"strict_truthfulness"</span>, <span style="color: #fca5a5;">"pii_masking"</span>],<br>
+              &nbsp;&nbsp;tools: [<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;tools.orderLookup,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;tools.modifyShipping,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;tools.humanEscalation<br>
+              &nbsp;&nbsp;]<br>
+              });<br><br>
+              <span style="color: #6ee7b7;">// Event Triggered</span><br>
+              agent.<span style="color: #93c5fd;">onMessage</span>(<span style="color: #93c5fd;">async</span> (inquiry) => {<br>
+              &nbsp;&nbsp;<span style="color: #93c5fd;">const</span> ctx = <span style="color: #93c5fd;">await</span> agent.retrieve(inquiry);<br>
+              &nbsp;&nbsp;<span style="color: #93c5fd;">const</span> decision = <span style="color: #93c5fd;">await</span> agent.reason(ctx);<br>
+              &nbsp;&nbsp;<span style="color: #fde047;">return</span> agent.executeAndReply(decision);<br>
+              });
+            </div>
+            <div style="margin-top: 16px; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted);">
+              <span><i class="fas fa-bolt" style="color: #f59e0b;"></i> Average Resolution: 0.38s</span>
+              <span><i class="fas fa-shield-alt" style="color: #10b981;"></i> 100% Deterministic Safety</span>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <h1 class="hero-title-main">
-          We Craft <br><span class="highlight-text">Digital Experiences</span><br>
-          That Define Industries
-        </h1>
+    <!-- Deep Dive 2: Custom AI Automations -->
+    <section class="service-deep-dive" id="custom-ai-automations" style="padding-top: 0;">
+      <div class="deep-dive-card">
+        <div class="deep-dive-grid">
+          <div>
+            <div class="card-badge-row">
+              <span class="badge badge-purple"><i class="fas fa-bolt"></i> Flagship Service</span>
+              <span class="badge badge-blue">Autonomous Pipelines</span>
+            </div>
+            
+            <h2 class="deep-dive-title">Custom AI Automations</h2>
+            <p class="deep-dive-text">
+              Manual data entry, unstructured document audits, copy-pasting between legacy software, and repetitive validation tasks cost modern companies thousands of productive hours. We build custom autonomous AI pipelines that run 24/7 with machine-precision.
+            </p>
 
-        <p class="hero-desc"
-          style="margin-top: 20px; font-size: 1.1rem; color: #cfcfcf; max-width: 800px; margin-left: auto; margin-right: auto;">
-          Stop settling for "affordable" that looks cheap. We engineer premium, SEO-optimized, and scalable websites
-          that turn visitors into loyal customers—without breaking the bank.
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-title"><i class="fas fa-file-invoice" style="color: var(--brand-indigo);"></i> Document Intelligence</div>
+                <div class="spec-desc">Ingest and extract messy PDFs, supply chain bills, invoices, receipts, and legal agreements with structured JSON output.</div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-title"><i class="fas fa-arrows-split-up-and-left" style="color: var(--brand-blue);"></i> Multi-Agent Chains</div>
+                <div class="spec-desc">Sequential workflows where an extraction agent hands off to a verification agent, which hands off to an execution agent.</div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-title"><i class="fas fa-database" style="color: var(--brand-emerald);"></i> CRM & ERP Synchronization</div>
+                <div class="spec-desc">Two-way reconciliation between Salesforce, HubSpot, SAP, NetSuite, Google Sheets, and your private databases.</div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-title"><i class="fas fa-shield-halved" style="color: var(--brand-violet);"></i> Self-Healing Workers</div>
+                <div class="spec-desc">Asynchronous workers with automated retry logic, anomaly alerts, and validation checks to prevent incorrect execution.</div>
+              </div>
+            </div>
+
+            <a href="/contactus/?service=custom_ai_automations" class="btn btn-primary">
+              <span>Scope Your AI Automation</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Technical Pipeline Mockup -->
+          <div class="deep-dive-visual">
+            <div style="font-size: 0.82rem; font-weight: 700; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em;">
+              Autonomous Automation Pipeline
+            </div>
+            <div class="code-mockup">
+              <span style="color: #6ee7b7;">// Pipeline: Automated Invoice Reconciliation</span><br>
+              <span style="color: #93c5fd;">const</span> pipeline = <span style="color: #fde047;">new</span> AutomationPipeline({<br>
+              &nbsp;&nbsp;trigger: <span style="color: #fca5a5;">"inbox.onAttachment(PDF)"</span>,<br>
+              &nbsp;&nbsp;stages: [<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6ee7b7;">// Stage 1: Multimodal OCR & Field Extraction</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;ai.extractStructuredJSON,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6ee7b7;">// Stage 2: Cross-check against ERP Purchase Order</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;erp.validateLineItems,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6ee7b7;">// Stage 3: Fraud & anomaly score</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;ai.anomalyCheck,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6ee7b7;">// Stage 4: Trigger 1-click accounting voucher</span><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;accounting.createDraftPayment<br>
+              &nbsp;&nbsp;]<br>
+              });<br><br>
+              <span style="color: #6ee7b7;">// Execution status: 100% autonomous</span><br>
+              pipeline.<span style="color: #93c5fd;">start</span>();
+            </div>
+            <div style="margin-top: 16px; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted);">
+              <span><i class="fas fa-clock" style="color: #3b82f6;"></i> Avg Time Saved: 20+ hrs/wk</span>
+              <span><i class="fas fa-check-double" style="color: #10b981;"></i> 99.8% Extraction Parity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Full-Stack AI Services -->
+    <section class="section" style="padding-top: 20px;">
+      <div class="section-header">
+        <p class="section-eyebrow">COMPREHENSIVE ENGINEERING</p>
+        <h2 class="section-title">End-to-End AI Systems Delivery</h2>
+        <p class="section-description">
+          We don't leave you with detached scripts. We build the full digital infrastructure required to host, scale, and maintain your AI capabilities.
         </p>
+      </div>
 
-        <!-- Elements Removed Requested by User -->
-
-        <div class="hero-buttons">
-          <a href="/contactus/" class="btn-primary-brand">Start Your Project <i class="fas fa-arrow-right"></i></a>
-          <a href="#pricing" class="btn-outline-brand">View Pricing <i class="fas fa-chevron-down"></i></a>
+      <div class="capabilities-grid">
+        <div class="capability-card" id="ai-web-apps">
+          <div class="capability-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h4 class="capability-title">AI-Native Web Applications</h4>
+          <p class="capability-desc">
+            Ultra-fast, conversion-optimized web applications with streaming generative UI, real-time webhooks, and responsive designs that delight users on desktop and mobile.
+          </p>
         </div>
 
-      </div>
-    </section>
-
-    <!-- Service Explorer Section Removed -->
-
-
-    <!-- E-commerce Pricing Section -->
-    <section class="pricing-section" id="pricing" data-service="web-dev" data-sub="ecommerce">
-      <div class="pricing-tables-container">
-        <h2 class="pricing-title">E-commerce Development Plans</h2>
-        <p class="pricing-subtitle">Launch your online store with our feature-packed, scalable, and secure e-commerce
-          solutions.</p>
-
-        <div class="pricing-table">
-          <!-- Starting Plan -->
-          <div class="pricing-tier" style="border-top: 4px solid var(--brand-blue);">
-            <div class="tier-header">
-              <h3 class="tier-name">Starting Plan</h3>
-              <div class="tier-price">
-                <span class="currency">₹</span>
-                <span class="amount">19,900</span>
-              </div>
-            </div>
-            <ul class="tier-features">
-              <li><i class="fas fa-check"></i> Custom Coded Website</li>
-              <li><i class="fas fa-check"></i> 10 Pages Website</li>
-              <li><i class="fas fa-check"></i> Mobile, Desktop & Tablet Responsive</li>
-              <li><i class="fas fa-check"></i> 1 Year Domain Name FREE</li>
-              <li><i class="fas fa-check"></i> 1 Year High Uptime Hosting FREE</li>
-              <li><i class="fas fa-check"></i> Payment Gateway Integration</li>
-              <li><i class="fas fa-check"></i> Delivery System Integration</li>
-              <li><i class="fas fa-check"></i> Basic Admin Panel</li>
-              <li><i class="fas fa-check"></i> 6 Months Premium Technical Support</li>
-              <li><i class="fas fa-check"></i> List 300+ Items</li>
-              <li><i class="fas fa-check" style="color: #4ade80;"></i> <strong>GET SOURCE CODE</strong></li>
-            </ul>
-            <div class="tier-actions" style="margin-top: auto; display: flex; flex-direction: column; gap: 10px;">
-              <a href="/contactus/" class="btn-outline-brand" style="width: 100%; text-align: center;">Contact for
-                Details</a>
-              <a href="/payment/?plan=starting" class="btn-primary-brand"
-                style="width: 100%; text-align: center;">Checkout <i class="fas fa-arrow-right"></i></a>
-            </div>
+        <div class="capability-card" id="enterprise-guardrails">
+          <div class="capability-icon">
+            <i class="fas fa-lock"></i>
           </div>
+          <h4 class="capability-title">Enterprise Security & Compliance</h4>
+          <p class="capability-desc">
+            SOC2-aligned architecture, private tenant vector embeddings, zero data training guarantees, and cryptographic authentication for all automated tool calls.
+          </p>
+        </div>
 
-          <!-- Medium Plan -->
-          <div class="pricing-tier featured" style="border-top: 4px solid var(--brand-purple);">
-            <div class="tier-badge">Most Popular</div>
-            <div class="tier-header">
-              <h3 class="tier-name">Medium Plan</h3>
-              <div class="tier-price">
-                <span class="currency">₹</span>
-                <span class="amount">25,900</span>
-                <span style="font-size: 0.9rem; color: #888; align-self: flex-end; margin-bottom: 5px;">/ start</span>
-              </div>
-            </div>
-            <ul class="tier-features">
-              <li><i class="fas fa-check-double" style="color: var(--brand-purple);"></i> <strong>Everything in Starting
-                  Plan</strong></li>
-              <li><i class="fas fa-check"></i> <strong>12 Months</strong> Technical Support</li>
-              <li><i class="fas fa-check"></i> Advanced Admin Panel</li>
-              <li><i class="fas fa-check"></i> List up to <strong>800+ Items</strong></li>
-              <li><i class="fas fa-check"></i> User Login to Main Website</li>
-              <li><i class="fas fa-check"></i> Advanced Analytics</li>
-              <li><i class="fas fa-check"></i> SEO Optimization Pack</li>
-            </ul>
-            <div class="tier-actions" style="margin-top: auto; display: flex; flex-direction: column; gap: 10px;">
-              <a href="/contactus/" class="btn-outline-brand" style="width: 100%; text-align: center;">Contact for
-                Details</a>
-              <a href="/payment/?plan=medium" class="btn-primary-brand"
-                style="width: 100%; text-align: center;">Checkout <i class="fas fa-arrow-right"></i></a>
-            </div>
+        <div class="capability-card">
+          <div class="capability-icon">
+            <i class="fas fa-sliders"></i>
           </div>
-
-          <!-- Highly Customised Plan -->
-          <div class="pricing-tier pricing-tier-custom">
-            <div class="tier-header">
-              <h3 class="tier-name">Highly Customised</h3>
-              <div class="tier-price">
-                <span class="amount" style="font-size: 1.8rem;">Custom</span>
-              </div>
-            </div>
-            <ul class="tier-features">
-              <li><i class="fas fa-layer-group"></i> Fully Tailored Solutions</li>
-              <li><i class="fas fa-server"></i> Dedicated Server Infrastructure</li>
-              <li><i class="fas fa-mobile-alt"></i> Native Mobile Apps (iOS & Android)</li>
-              <li><i class="fas fa-rocket"></i> High-Scale Performance</li>
-              <li><i class="fas fa-user-shield"></i> Enterprise Grade Security</li>
-              <li><i class="fas fa-headset"></i> 24/7 Dedicated Support Manager</li>
-            </ul>
-            <div class="tier-actions" style="margin-top: auto; display: flex; flex-direction: column; gap: 10px;">
-              <a href="/contactus/" class="btn-primary-brand" style="width: 100%; text-align: center;">Contact Us</a>
-              <a href="/contactus/" class="btn-outline-brand" style="width: 100%; text-align: center;">Request
-                Quote</a>
-            </div>
-          </div>
-
+          <h4 class="capability-title">Continuous Model Evaluation</h4>
+          <p class="capability-desc">
+            Automated regression testing, prompt drift monitoring, synthetic dataset evaluation, and latency tuning to ensure your AI agents stay sharp as your business evolves.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- Value Matrix (Replaces legacy pricing completely) -->
+    <section class="comparison-section">
+      <div class="section-header">
+        <p class="section-eyebrow">THE SHONKUWEB ADVANTAGE</p>
+        <h2 class="section-title">Manual Operations vs. Autonomous AI</h2>
+        <p class="section-description">
+          Why leading enterprises choose custom AI agents over bloated headcounts and generic software templates.
+        </p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Operational Vector</th>
+              <th>ShonkuWeb Autonomous AI</th>
+              <th>Traditional Manual Setup</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response & Resolution Speed</td>
+              <td><strong>Instant (Sub-400ms)</strong> across all channels</td>
+              <td>Minutes to hours depending on shift queues</td>
+            </tr>
+            <tr>
+              <td>Operating Hours & Availability</td>
+              <td><strong>24/7/365 Non-stop</strong> with zero human fatigue</td>
+              <td>Constrained by shift schedules and holidays</td>
+            </tr>
+            <tr>
+              <td>Data Grounding & Truthfulness</td>
+              <td><strong>Zero-Hallucination RAG</strong> with verified citations</td>
+              <td>Manual searching across fragmented docs</td>
+            </tr>
+            <tr>
+              <td>Back-Office Tool Execution</td>
+              <td><strong>Autonomous API Actions</strong> (Refunds, DB, CRM)</td>
+              <td>Manual copy-pasting between separate tabs</td>
+            </tr>
+            <tr>
+              <td>Multilingual Capabilities</td>
+              <td><strong>95+ Languages Fluent</strong> in native context</td>
+              <td>Requires expensive multi-regional staff</td>
+            </tr>
+            <tr>
+              <td>Scalability During Spikes</td>
+              <td><strong>Infinite Concurrency</strong> without adding overhead</td>
+              <td>Backlogs pile up; customer frustration rises</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Scoping CTA Section -->
+    <section class="cta-section">
+      <div class="cta-banner-card">
+        <div class="cta-content">
+          <h2 class="cta-title">Let’s Architect Your Custom AI Solution</h2>
+          <p class="cta-desc">
+            Every business workflow is unique. Tell us about your operational bottlenecks or customer support volume, and we will prepare a tailored technical architecture proposal.
+          </p>
+          <div class="cta-actions">
+            <a href="/contactus/" class="btn-cta-light">
+              <span>Book an AI Scoping Consultation</span>
+              <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+            </a>
+            <a href="/aboutus/" class="btn-cta-ghost">
+              <span>Learn About Our Philosophy</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <section class="section footer" id="section4">
-    <footer class="footer-container">
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-main-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo-container" style="margin-bottom: 16px;">
+            <div class="logo-icon"><i class="fas fa-sparkles"></i></div>
+            <span class="logo-text">ShonkuWeb</span>
+          </a>
+          <p>
+            An elite engineering studio crafting production-grade Customer Support AI Agents, custom AI Automations, and high-performance digital platforms.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://x.com/shonkuweb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter)">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://youtube.com/@ShonkuWeb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com/shonkuweb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
 
-      <div class="footer-message">
-        <h2>Thank You for Visiting ShonkuWeb</h2>
-        <p>We appreciate your time and interest. Let's build something extraordinary together — from concept to
-          deployment, we're here to make it happen.</p>
+        <div class="footer-col">
+          <h4>Core Solutions</h4>
+          <ul>
+            <li><a href="/services/#customer-support-ai">Customer Support AI</a></li>
+            <li><a href="/services/#custom-ai-automations">Custom AI Automations</a></li>
+            <li><a href="/services/#ai-web-apps">AI-Native Web Apps</a></li>
+            <li><a href="/services/#enterprise-guardrails">Enterprise Guardrails</a></li>
+            <li><a href="/bidhushekhar/">BidhuShekar Lab</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/aboutus/">About Us</a></li>
+            <li><a href="/contactus/">Contact & Scoping</a></li>
+            <li><a href="https://x.com/IMJITA1" target="_blank" rel="noopener noreferrer">@shibam</a></li>
+            <li><a href="https://x.com/ImJitD" target="_blank" rel="noopener noreferrer">@JitD</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Policies</h4>
+          <ul>
+            <li><a href="/terms&amp;conditions/">Terms & Conditions</a></li>
+            <li><a href="/cancellation-refund-policy/">Cancellation & Refund</a></li>
+            <li><a href="/shipping-delivery-policy/">Delivery Policy</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-links">
-        <a href="/aboutus/">About Us</a>
-        <a href="/terms&amp;conditions/">Terms & Conditions</a>
-        <a href="/cancellation-refund-policy/">Cancellation Policy</a>
-        <a href="/contactus/">Contact Us</a>
+      <div class="footer-bottom">
+        <p>© 2026 ShonkuWeb. All rights reserved. Built for autonomous scale.</p>
+        <p>Engineered with precision for modern enterprises.</p>
       </div>
+    </div>
+  </footer>
 
-      <div class="footer-cta">
-        <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
-          <i class="fas fa-arrow-up" aria-hidden="true"></i>
-          Back to top
-        </a>
-      </div>
-
-      <div class="footer-socials">
-        <a href="https://x.com/shonkuweb" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-          <i class="fab fa-x-twitter"></i>
-        </a>
-        <a href="https://youtube.com/@ShonkuWeb" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://instagram.com/shonkuweb" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-
-      <p class="footer-copy">© 2025 ShonkuWeb. All rights reserved.</p>
-    </footer>
-  </section>
   <script src="/script.js"></script>
 </body>
 

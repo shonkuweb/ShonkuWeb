@@ -3,21 +3,27 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="description"
-    content="ShonkuWeb - Premium web development agency building scalable, SEO-optimized websites and digital solutions for ambitious brands. From concept to deployment.">
+    content="ShonkuWeb is an elite AI-first studio engineering production-grade Customer Support AI Agents and bespoke Custom AI Automations for modern enterprises and ambitious startups.">
   <meta name="keywords"
-    content="web development, website design, e-commerce, ShonkuWeb, digital solutions, SEO, mobile apps">
+    content="Customer Support AI Agent, Custom AI Automations, AI Studio, LLM Workflows, Autonomous Agents, AI Startup, ShonkuWeb">
   <meta name="author" content="ShonkuWeb">
-  <meta property="og:title" content="ShonkuWeb | Web Development Agency">
+  <meta property="og:title" content="ShonkuWeb — AI-First Systems & Autonomous Agents Studio">
   <meta property="og:description"
-    content="Building Digital Empires, Not Just Websites. Scalable tech for ambitious brands.">
+    content="Intelligent systems. Autonomous scale. We engineer Customer Support AI Agents and custom AI Automations that eliminate manual work.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://shonkuweb.com/">
   <link rel="canonical" href="https://shonkuweb.com/">
-  <title>ShonkuWeb | Web Development Agency</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>ShonkuWeb — AI-First Systems & Autonomous Agents Studio</title>
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+
   <!-- Vercel Analytics -->
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -31,240 +37,576 @@
 </head>
 
 <body>
+  <!-- Header / Navigation -->
   <header>
     <nav class="navbar">
-      <div class="logo">ShonkuWeb</div>
+      <a href="/" class="logo-container">
+        <div class="logo-icon">
+          <i class="fas fa-sparkles"></i>
+        </div>
+        <span class="logo-text">ShonkuWeb</span>
+        <span class="logo-tag">AI STUDIO</span>
+      </a>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="/">Home</a></li>
-        <li><a href="/aboutus/">About Us</a></li>
         <li><a href="/services/">Services</a></li>
+        <li><a href="/aboutus/">About Us</a></li>
+        <li><a href="/bidhushekhar/">BidhuShekar <span class="badge badge-purple" style="font-size: 0.65rem; padding: 2px 6px;">LAB</span></a></li>
         <li><a href="/contactus/">Contact Us</a></li>
-        <li><a href="/terms&amp;conditions/">Terms</a></li>
-        <li><a href="/cancellation-refund-policy/">Cancellation</a></li>
-        <li><a href="/shipping-delivery-policy/">Shipping Policy</a></li>
       </ul>
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <div class="nav-actions">
+        <a href="/contactus/" class="btn btn-primary btn-sm">
+          <span>Book Strategy Call</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   </header>
 
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-mesh-glow"></div>
 
-
-  <!-- Brand Theme Hero Section -->
-  <section class="brand-hero">
-    <div class="hero-bg-glow"></div>
-    <div class="hero-content">
-
-      <div class="trust-badge">
-        <span class="trust-dot"></span>
-        <span>Rated 5/5 by 50+ Founders</span>
+      <div class="status-pill">
+        <span class="pulse-dot"></span>
+        <span>Next-Generation Autonomous AI Systems</span>
       </div>
 
-      <h1 class="hero-title-main">
-        Building <span class="highlight-text">Digital Empires</span>,<br>
-        Not Just Websites
+      <h1 class="hero-headline">
+        Intelligent Systems.<br>
+        <span class="gradient-text">Autonomous Scale.</span>
       </h1>
 
-      <h2 class="hero-title-sub">
-        Scalable Tech for Ambitious Brands
-      </h2>
-
-      <p class="hero-desc">
-        From robust backends to stunning frontends, We engineer the complete digital ecosystem your business needs to
-        dominate the market.
+      <p class="hero-subtitle">
+        We engineer production-grade <strong>Customer Support AI Agents</strong> and custom <strong>AI Automations</strong> that resolve complex inquiries in milliseconds and eliminate repetitive business workflows.
       </p>
 
-      <div class="hero-buttons">
-        <a href="/services/" class="btn-primary-brand">Explore Our Services <i class="fas fa-arrow-right"></i></a>
-        <a href="/contactus/" class="btn-outline-brand">Talk to an Expert <i class="fas fa-comment-dots"></i></a>
+      <div class="hero-cta-group">
+        <a href="/contactus/" class="btn btn-primary btn-lg">
+          <span>Deploy Your AI Agent</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="/services/" class="btn btn-secondary btn-lg">
+          <span>Explore Capabilities</span>
+          <i class="fas fa-layer-group"></i>
+        </a>
       </div>
 
-    </div>
-  </section>
-
-
-  <!-- Stats / Why Choose Us Section (Upgraded) -->
-  <section class="stats-section">
-    <div class="stats-grid">
-      <div class="stat-card">
-        <span class="stat-number">100+</span>
-        <span class="stat-label">Projects Delivered</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">98%</span>
-        <span class="stat-label">Client Retention</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-number">24/7</span>
-        <span class="stat-label">Support Coverage</span>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="section" id="section2">
-    <div class="services brand-details" style="background: transparent; padding-top: 80px;">
-      <!-- Reuse brand-details styles but mostly for the cards -->
-      <div class="services-container">
-        <h2 class="services-title">Our Core Expertise</h2>
-
-        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-
-          <!-- Web Dev Card -->
-          <article class="brand-card service-item"
-            style="display: flex; flex-direction: column; align-items: flex-start; text-align: left; padding: 32px;">
-            <div class="detail-icon" style="width: 60px; height: 60px; font-size: 2rem; margin: 0 0 20px 0;"><i
-                class="fas fa-code"></i></div>
-            <h3 class="service-name" style="font-size: 1.4rem;">Web Development</h3>
-            <p class="service-description" style="margin-bottom: 24px;">Fast, secure and scalable websites and web apps
-              optimized for SEO and conversions.</p>
-            <a href="/services/#web-dev" class="detail-btn">Learn more <i class="fas fa-arrow-right"></i></a>
-          </article>
-
-          <!-- AI Card -->
-          <article class="brand-card service-item"
-            style="display: flex; flex-direction: column; align-items: flex-start; text-align: left; padding: 32px;">
-            <div class="detail-icon" style="width: 60px; height: 60px; font-size: 2rem; margin: 0 0 20px 0;"><i
-                class="fas fa-brain"></i></div>
-            <h3 class="service-name" style="font-size: 1.4rem;">AI Solutions</h3>
-            <p class="service-description" style="margin-bottom: 24px;">Intelligent chatbots and automation workflows
-              that streamline your operations.</p>
-            <a href="/services/#customer-support-ai" class="detail-btn">Learn more <i
-                class="fas fa-arrow-right"></i></a>
-          </article>
-
-          <!-- Mobile Card -->
-          <article class="brand-card service-item"
-            style="display: flex; flex-direction: column; align-items: flex-start; text-align: left; padding: 32px;">
-            <div class="detail-icon" style="width: 60px; height: 60px; font-size: 2rem; margin: 0 0 20px 0;"><i
-                class="fas fa-mobile-alt"></i></div>
-            <h3 class="service-name" style="font-size: 1.4rem;">Mobile Apps</h3>
-            <p class="service-description" style="margin-bottom: 24px;">Native iOS and Android applications built for
-              performance and user engagement.</p>
-            <a href="/services/#android-dev" class="detail-btn">Learn more <i class="fas fa-arrow-right"></i></a>
-          </article>
-
+      <!-- Trust & Integration Ecosystem -->
+      <div class="trust-banner">
+        <p class="trust-title">Engineered with State-of-the-Art Foundation Models & Ecosystems</p>
+        <div class="trust-logos">
+          <div class="trust-pill"><i class="fas fa-brain"></i> OpenAI GPT-4o</div>
+          <div class="trust-pill"><i class="fas fa-microchip"></i> Anthropic Claude</div>
+          <div class="trust-pill"><i class="fas fa-cube"></i> Google Gemini</div>
+          <div class="trust-pill"><i class="fab fa-whatsapp"></i> WhatsApp Business</div>
+          <div class="trust-pill"><i class="fab fa-slack"></i> Slack Agents</div>
+          <div class="trust-pill"><i class="fas fa-database"></i> Vector RAG</div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Interactive AI Agent Playground / Live Simulator -->
+    <section class="interactive-demo-section">
+      <div class="demo-window">
+        <div class="demo-header">
+          <div class="demo-controls">
+            <span class="demo-dot red"></span>
+            <span class="demo-dot yellow"></span>
+            <span class="demo-dot green"></span>
+          </div>
+          <div class="demo-title">
+            <i class="fas fa-terminal"></i> shonku-agent-runtime v2.4 • live-preview
+          </div>
+          <div class="badge badge-emerald">
+            <span class="pulse-dot" style="width: 6px; height: 6px;"></span> Active Runtime
+          </div>
+        </div>
 
-  <section class="brand-testimonials" id="section3">
-    <div class="brand-testimonials-container">
-      <h2 class="testimonials-title">What Founders Say</h2>
-      <div class="testimonials-ticker" aria-label="Client testimonials scrolling list"
-        style="overflow: hidden; mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);">
-        <div class="testimonials-track">
+        <div class="demo-body">
+          <!-- Scenario selector -->
+          <div class="demo-sidebar">
+            <div class="demo-sidebar-label">Select Demo Scenario</div>
+            
+            <button class="demo-prompt-chip active" data-scenario="support">
+              <div style="font-weight: 700; margin-bottom: 2px;"><i class="fas fa-headset"></i> Customer Support Agent</div>
+              <div style="font-size: 0.76rem; color: var(--text-muted);">Real-time ticket resolution & tool execution</div>
+            </button>
 
-          <!-- Original Testimonials -->
-          <article class="brand-testimonial-card">
-            <p class="testimonial-text">"They revamped our site and Core Web Vitals skyrocketed. Traffic and conversions
-              are up significantly."</p>
-            <div class="testimonial-meta">Priya, E‑commerce founder</div>
-          </article>
+            <button class="demo-prompt-chip" data-scenario="automation">
+              <div style="font-weight: 700; margin-bottom: 2px;"><i class="fas fa-bolt"></i> Custom AI Automation</div>
+              <div style="font-size: 0.76rem; color: var(--text-muted);">Document parsing & ERP payment sync</div>
+            </button>
 
-          <article class="brand-testimonial-card">
-            <p class="testimonial-text">"Our support load dropped 40% after launching the Customer Support AI assistant.
-              A total game changer."</p>
-            <div class="testimonial-meta">Arjun, SaaS PM</div>
-          </article>
+            <button class="demo-prompt-chip" data-scenario="lead">
+              <div style="font-weight: 700; margin-bottom: 2px;"><i class="fas fa-chart-line"></i> Autonomous Triage & CRM</div>
+              <div style="font-size: 0.76rem; color: var(--text-muted);">Lead enrichment & engineer scheduling</div>
+            </button>
+          </div>
 
-          <article class="brand-testimonial-card">
-            <p class="testimonial-text">"Lightning‑fast Android build with a rock‑solid CI/CD. Release days are finally
-              stress‑free now."</p>
-            <div class="testimonial-meta">Neha, Product Lead</div>
-          </article>
+          <!-- Chat simulator -->
+          <div class="demo-chat-area">
+            <div class="demo-messages" id="demoMessages">
+              <div class="chat-bubble user">
+                A customer wants to update their shipping address and asked about our return policy for opened items.
+              </div>
+              <div class="chat-bubble agent">
+                <div class="agent-meta">
+                  <span><i class="fas fa-robot"></i> Shonku AI Agent</span>
+                  <span>• Latency: 284ms</span>
+                </div>
+                <p>Hello! I've checked the customer's active order #SW-8921. Because it hasn't dispatched yet, I safely updated their destination to the requested address. For opened items, our policy permits returns within 30 days under warranty inspection. I've sent the confirmation receipt to their registered email and tagged the ticket as resolved.</p>
+                <div class="agent-tool-tag">
+                  <i class="fas fa-check-circle"></i> Tool Executed: order_api.update_address() & crm.send_confirmation()
+                </div>
+              </div>
+            </div>
 
-          <article class="brand-testimonial-card">
-            <p class="testimonial-text">"The iOS app quality impressed our stakeholders. Polished UX and great
-              accessibility features."</p>
-            <div class="testimonial-meta">Karan, Startup CTO</div>
-          </article>
-
-          <article class="brand-testimonial-card">
-            <p class="testimonial-text">"Clear communication, clean code, and on‑time delivery. Couldn’t ask for a
-              better partner."</p>
-            <div class="testimonial-meta">Maya, Marketing Head</div>
-          </article>
-
-          <!-- Duplicates for seamless scroll -->
-          <article class="brand-testimonial-card">
-            <p class="testimonial-text">"They revamped our site and Core Web Vitals skyrocketed. Traffic and conversions
-              are up significantly."</p>
-            <div class="testimonial-meta">Priya, E‑commerce founder</div>
-          </article>
-
-          <article class="brand-testimonial-card">
-            <p class="testimonial-text">"Our support load dropped 40% after launching the Customer Support AI assistant.
-              A total game changer."</p>
-            <div class="testimonial-meta">Arjun, SaaS PM</div>
-          </article>
-
-          <article class="brand-testimonial-card">
-            <p class="testimonial-text">"Lightning‑fast Android build with a rock‑solid CI/CD. Release days are finally
-              stress‑free now."</p>
-            <div class="testimonial-meta">Neha, Product Lead</div>
-          </article>
-
-          <article class="brand-testimonial-card">
-            <p class="testimonial-text">"The iOS app quality impressed our stakeholders. Polished UX and great
-              accessibility features."</p>
-            <div class="testimonial-meta">Karan, Startup CTO</div>
-          </article>
-
-          <article class="brand-testimonial-card">
-            <p class="testimonial-text">"Clear communication, clean code, and on‑time delivery. Couldn’t ask for a
-              better partner."</p>
-            <div class="testimonial-meta">Maya, Marketing Head</div>
-          </article>
-
+            <div class="demo-input-bar">
+              <input type="text" id="demoInput" placeholder="Try your custom question or action (e.g., 'How do agents handle human handoffs?')" />
+              <button class="demo-send-btn" id="demoSendBtn" aria-label="Send query">
+                <i class="fas fa-arrow-up"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- Flagship Core Services (Spotlight) -->
+    <section class="section" id="services">
+      <div class="section-header">
+        <p class="section-eyebrow">OUR CORE FOCUS</p>
+        <h2 class="section-title">Architecting the Autonomous Future</h2>
+        <p class="section-description">
+          We don’t build generic wrappers. We architect production-grade, highly resilient AI solutions customized to your proprietary datasets and business operations.
+        </p>
+      </div>
+
+      <div class="services-grid-primary">
+        <!-- Flagship 1: Customer Support AI Agent -->
+        <article class="flagship-card" id="support-agent">
+          <div class="card-top">
+            <div class="card-badge-row">
+              <span class="badge badge-blue"><i class="fas fa-sparkles"></i> Flagship Service</span>
+              <span class="badge badge-emerald">24/7 Zero Latency</span>
+            </div>
+            <div class="card-icon-box">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="card-title">Customer Support AI Agents</h3>
+            <p class="card-text">
+              Transform your customer experience with autonomous support agents grounded deeply in your business data. Resolves up to 84% of user inquiries without human intervention, operates 24/7 across 95+ languages, and natively performs multi-step back-office actions.
+            </p>
+            
+            <ul class="feature-checklist">
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Zero-Hallucination RAG Architecture:</strong> Verified answers drawn strictly from your company documents, knowledge base, and live APIs.</div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Omni-Channel Integration:</strong> Deploy seamlessly on Web Chat, WhatsApp, Slack, Zendesk, Intercom, and Email.</div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Autonomous Tool Calling:</strong> Directly looks up orders, processes return tickets, updates billing, and verifies user identity.</div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Intelligent Human Escalation:</strong> Detects frustrated sentiment or complex edge cases and transfers instantly to human reps with full context.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <a href="/services/#customer-support-ai" class="btn btn-secondary" style="width: 100%;">
+              <span>View Deep Architecture & Use Cases</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Flagship 2: Custom AI Automations -->
+        <article class="flagship-card" id="ai-automations">
+          <div class="card-top">
+            <div class="card-badge-row">
+              <span class="badge badge-purple"><i class="fas fa-bolt"></i> Flagship Service</span>
+              <span class="badge badge-blue">Multi-Agent Systems</span>
+            </div>
+            <div class="card-icon-box">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3 class="card-title">Custom AI Automations</h3>
+            <p class="card-text">
+              Replace hundreds of hours of manual operations with bespoke multi-agent workflows. From unstructured invoice extraction and CRM reconciliation to automated lead qualification, our agents run in the background with precision and deterministic logic.
+            </p>
+            
+            <ul class="feature-checklist">
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Unstructured Document Intelligence:</strong> Extract, validate, and summarize PDFs, financial receipts, contracts, and images with 99.8% precision.</div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Multi-Agent Orchestration:</strong> Sequential and hierarchical agent pipelines that triage, plan, verify, and execute complex workflows.</div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>CRM & ERP Synchronizations:</strong> Connect directly with Salesforce, HubSpot, Stripe, Notion, PostgreSQL, and custom internal APIs.</div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Self-Healing Background Workers:</strong> Resilient asynchronous jobs with automatic retry loops and strict anomaly detection.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <a href="/services/#custom-ai-automations" class="btn btn-secondary" style="width: 100%;">
+              <span>Explore Custom Automations</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Supporting Full-Stack Capabilities -->
+      <div class="capabilities-grid">
+        <div class="capability-card">
+          <div class="capability-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h4 class="capability-title">AI-Native Web Applications</h4>
+          <p class="capability-desc">
+            Ultra-fast, responsive web interfaces built with modern web standards, designed from the ground up for seamless interaction with AI backends and streaming responses.
+          </p>
+        </div>
+
+        <div class="capability-card">
+          <div class="capability-icon">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <h4 class="capability-title">Enterprise Security & Guardrails</h4>
+          <p class="capability-desc">
+            Hardened prompt injection defenses, PII masking, SOC2 compliance considerations, and privacy barriers ensuring your proprietary data remains safe and never trains third-party models.
+          </p>
+        </div>
+
+        <div class="capability-card">
+          <div class="capability-icon">
+            <i class="fas fa-mobile-screen"></i>
+          </div>
+          <h4 class="capability-title">Mobile AI Client Apps</h4>
+          <p class="capability-desc">
+            Native iOS and Android client applications featuring low-latency on-device processing and streaming conversational AI capabilities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & Deployment Lifecycle -->
+    <section class="workflow-section">
+      <div class="workflow-container">
+        <div class="section-header">
+          <p class="section-eyebrow">ENGINEERING PROCESS</p>
+          <h2 class="section-title">How We Deploy Production AI</h2>
+          <p class="section-description">
+            A battle-tested methodology designed to move from concept to live, resilient deployment in weeks—not months.
+          </p>
+        </div>
+
+        <div class="workflow-steps-grid">
+          <div class="workflow-step-card">
+            <span class="step-num">PHASE 01</span>
+            <h4 class="step-title">Workflow & Data Audit</h4>
+            <p class="step-desc">
+              We inspect your historical support tickets, operational bottlenecks, internal APIs, and documentation to pinpoint the highest-impact automation vectors.
+            </p>
+          </div>
+
+          <div class="workflow-step-card">
+            <span class="step-num">PHASE 02</span>
+            <h4 class="step-title">Vector RAG & Agent Prompts</h4>
+            <p class="step-desc">
+              We index your knowledge base into high-speed vector embeddings and design multi-tiered prompt instructions with strict deterministic fallback logic.
+            </p>
+          </div>
+
+          <div class="workflow-step-card">
+            <span class="step-num">PHASE 03</span>
+            <h4 class="step-title">API Integration & Tooling</h4>
+            <p class="step-desc">
+              We connect your agent to your live software ecosystem (CRMs, payment gateways, databases) using secure OAuth and REST webhook bridges.
+            </p>
+          </div>
+
+          <div class="workflow-step-card">
+            <span class="step-num">PHASE 04</span>
+            <h4 class="step-title">Production & Active Tuning</h4>
+            <p class="step-desc">
+              We launch with real-time telemetry monitoring, human handoff safety nets, latency optimization, and continuous evaluation sweeps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Performance Metrics (No Pricing!) -->
+    <section class="stats-banner">
+      <div class="stats-grid-container">
+        <div class="stat-item">
+          <div class="stat-value">0.38s</div>
+          <div class="stat-label">Average Response Latency</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">84%</div>
+          <div class="stat-label">Autonomous Resolution Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">24/7/365</div>
+          <div class="stat-label">Continuous Real-Time Coverage</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">99.8%</div>
+          <div class="stat-label">Guardrail Compliance Accuracy</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials / What Founders Say -->
+    <section class="testimonials-section">
+      <div class="section-header">
+        <p class="section-eyebrow">PARTNER TESTIMONIALS</p>
+        <h2 class="section-title">Trusted by Modern Operators</h2>
+        <p class="section-description">
+          Here is how forward-thinking leaders scale their business operations with ShonkuWeb.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <div>
+            <div class="stars-row">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="quote-text">
+              "The Customer Support AI agent built by ShonkuWeb resolved 78% of our repetitive e-commerce tickets from day one. Our response times plummeted from 4 hours to 5 seconds."
+            </p>
+          </div>
+          <div class="author-meta">
+            <div class="author-avatar">P</div>
+            <div class="author-details">
+              <h4>Priya Sharma</h4>
+              <p>Founder, D2C Commerce</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div>
+            <div class="stars-row">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="quote-text">
+              "ShonkuWeb engineered a custom AI document pipeline that matches invoices with POs and updates our ERP. It saved our finance team over 25 hours every single week."
+            </p>
+          </div>
+          <div class="author-meta">
+            <div class="author-avatar">A</div>
+            <div class="author-details">
+              <h4>Arjun Mehta</h4>
+              <p>VP Operations, B2B SaaS</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div>
+            <div class="stars-row">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="quote-text">
+              "What impressed us most was the zero-hallucination rate and human escalation logic. Our support staff only touches complex edge cases now. Invaluable partners."
+            </p>
+          </div>
+          <div class="author-meta">
+            <div class="author-avatar">K</div>
+            <div class="author-details">
+              <h4>Karan Singhania</h4>
+              <p>CTO, FinTech Services</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq-section">
+      <div class="section-header">
+        <p class="section-eyebrow">COMMON QUESTIONS</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-description">
+          Everything you need to know about our autonomous AI solutions and deployment timelines.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do your Customer Support AI Agents prevent hallucinations?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We employ strict Retrieval-Augmented Generation (RAG) coupled with deterministic guardrail layers. The agent is strictly constrained to cite answers exclusively from your verified documentation and database outputs. If an inquiry falls outside verified boundaries, the agent proactively routes the customer to human staff rather than guessing.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can the agent perform real actions like updating databases or processing refunds?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes. We integrate secure function calling and REST webhooks with your existing software stack (Stripe, Shopify, Zendesk, Postgres, Salesforce, etc.). Every sensitive action undergoes authentication and validation checks before execution.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What does Custom AI Automation include?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Custom AI Automation encompasses multi-step background pipelines that ingest messy unstructured data (such as emails, PDFs, contracts, and images), validate the contents against business rules, and trigger downstream operations across your company tools automatically.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How fast can we deploy an AI system to production?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Most Customer Support AI pilots are functional in a staging sandbox within 7 to 10 business days. Full end-to-end production rollout, including guardrail hardening and CRM tool connection, typically takes 2 to 3 weeks.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is our company data kept private and protected?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolutely. We use enterprise zero-data-retention API endpoints. Your internal documentation, customer inquiries, and proprietary workflows are never stored by model providers and are never used to train foundational AI models.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- High-Converting CTA Banner -->
+    <section class="cta-section">
+      <div class="cta-banner-card">
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to Automate Your Business with Intelligent AI?</h2>
+          <p class="cta-desc">
+            Book a 30-minute scoping consultation with our AI systems architects to discover what autonomous agents can do for your organization.
+          </p>
+          <div class="cta-actions">
+            <a href="/contactus/" class="btn-cta-light">
+              <span>Book Strategy Call</span>
+              <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+            </a>
+            <a href="/services/" class="btn-cta-ghost">
+              <span>View Service Breakdown</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-main-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo-container" style="margin-bottom: 16px;">
+            <div class="logo-icon"><i class="fas fa-sparkles"></i></div>
+            <span class="logo-text">ShonkuWeb</span>
+          </a>
+          <p>
+            An elite engineering studio crafting production-grade Customer Support AI Agents, custom AI Automations, and high-performance digital platforms. Inspired by the relentless spirit of Professor Shonku.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://x.com/shonkuweb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter)">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://youtube.com/@ShonkuWeb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com/shonkuweb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Core Solutions</h4>
+          <ul>
+            <li><a href="/services/#customer-support-ai">Customer Support AI</a></li>
+            <li><a href="/services/#custom-ai-automations">Custom AI Automations</a></li>
+            <li><a href="/services/#ai-web-apps">AI-Native Web Apps</a></li>
+            <li><a href="/services/#enterprise-guardrails">Enterprise Guardrails</a></li>
+            <li><a href="/bidhushekhar/">BidhuShekar Lab</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/aboutus/">About Us</a></li>
+            <li><a href="/contactus/">Contact & Scoping</a></li>
+            <li><a href="https://x.com/IMJITA1" target="_blank" rel="noopener noreferrer">@shibam</a></li>
+            <li><a href="https://x.com/ImJitD" target="_blank" rel="noopener noreferrer">@JitD</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Policies</h4>
+          <ul>
+            <li><a href="/terms&amp;conditions/">Terms & Conditions</a></li>
+            <li><a href="/cancellation-refund-policy/">Cancellation & Refund</a></li>
+            <li><a href="/shipping-delivery-policy/">Delivery Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 ShonkuWeb. All rights reserved. Built for autonomous scale.</p>
+        <p>Engineered with precision for modern enterprises.</p>
+      </div>
     </div>
-  </section>
-  <!-- Footer Section -->
-  <section class="section footer" id="section4">
-    <footer class="footer-container">
-
-      <div class="footer-message">
-        <h2>Thank You for Visiting ShonkuWeb</h2>
-        <p>We appreciate your time and interest. Let's build something extraordinary together — from concept to
-          deployment, we're here to make it happen.</p>
-      </div>
-
-      <div class="footer-links">
-        <a href="/aboutus/">About Us</a>
-        <a href="/terms&amp;conditions/">Terms & Conditions</a>
-        <a href="/cancellation-refund-policy/">Cancellation Policy</a>
-        <a href="/contactus/">Contact Us</a>
-      </div>
-
-      <div class="footer-cta">
-        <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
-          <i class="fas fa-arrow-up" aria-hidden="true"></i>
-          Back to top
-        </a>
-      </div>
-
-      <div class="footer-socials">
-        <a href="https://x.com/shonkuweb" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-          <i class="fab fa-x-twitter"></i>
-        </a>
-        <a href="https://youtube.com/@ShonkuWeb" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://instagram.com/shonkuweb" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-
-      <p class="footer-copy">© 2025 ShonkuWeb. All rights reserved.</p>
-    </footer>
-  </section>
+  </footer>
 
   <script src="/script.js"></script>
 </body>

@@ -3,18 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="description"
-    content="About ShonkuWeb - A modern technology agency dedicated to building smart, scalable, and impactful digital solutions for small and medium businesses.">
-  <meta name="keywords" content="about ShonkuWeb, web development agency, digital solutions, technology agency">
-  <meta property="og:title" content="About Us | ShonkuWeb">
+    content="About ShonkuWeb — An elite AI engineering studio inspired by the visionary invention spirit of Professor Shonku. Building production-grade autonomous systems for modern business.">
+  <meta name="keywords" content="about ShonkuWeb, AI studio, Professor Shonku, AI engineers, autonomous agents">
+  <meta property="og:title" content="About Us — ShonkuWeb | The AI Systems Studio">
   <meta property="og:description"
-    content="Engineering Wonder For Everyday Businesses. We build smart, scalable digital products for ambitious SMBs.">
+    content="Engineering wonder and autonomous intelligence for modern businesses. Inspired by the relentless curiosity of Professor Shonku.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://shonkuweb.com/aboutus/">
-  <title>About Us | ShonkuWeb</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>About Us — ShonkuWeb | The AI Systems Studio</title>
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+
   <!-- Vercel Analytics -->
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -28,168 +34,218 @@
 </head>
 
 <body>
-  <div id="section1"></div>
+  <!-- Header / Navigation -->
   <header>
     <nav class="navbar">
-      <div class="logo">ShonkuWeb</div>
+      <a href="/" class="logo-container">
+        <div class="logo-icon">
+          <i class="fas fa-sparkles"></i>
+        </div>
+        <span class="logo-text">ShonkuWeb</span>
+        <span class="logo-tag">AI STUDIO</span>
+      </a>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="/">Home</a></li>
-        <li><a href="/aboutus/">About Us</a></li>
         <li><a href="/services/">Services</a></li>
+        <li><a href="/aboutus/" class="active">About Us</a></li>
+        <li><a href="/bidhushekhar/">BidhuShekar <span class="badge badge-purple" style="font-size: 0.65rem; padding: 2px 6px;">LAB</span></a></li>
         <li><a href="/contactus/">Contact Us</a></li>
-        <li><a href="/terms&amp;conditions/">Terms</a></li>
-        <li><a href="/cancellation-refund-policy/">Cancellation</a></li>
-        <li><a href="/shipping-delivery-policy/">Shipping Policy</a></li>
       </ul>
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <div class="nav-actions">
+        <a href="/contactus/" class="btn btn-primary btn-sm">
+          <span>Book Strategy Call</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   </header>
 
-  <main class="about-wrapper">
-    <section class="hero about-hero" id="section2">
-      <div class="hero-content">
-        <p class="eyebrow">About ShonkuWeb</p>
-        <h1>Engineering Wonder For Everyday Businesses</h1>
-        <p class="hero-subtitle">
-          We build smart, scalable, and impactful digital products for ambitious SMBs—combining creativity, engineering
-          discipline, and a relentless curiosity about what’s next.
+  <main>
+    <!-- About Hero -->
+    <section class="about-hero">
+      <div class="status-pill">
+        <span class="pulse-dot"></span>
+        <span>Our Mission & Vision</span>
+      </div>
+
+      <h1 class="hero-headline">
+        Engineering Wonder for the<br>
+        <span class="gradient-text">Autonomous Era.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        We combine scientific curiosity with hardcore engineering rigor to craft AI systems that move fast, operate reliably, and solve real commercial bottlenecks.
+      </p>
+    </section>
+
+    <!-- The Shonku Story -->
+    <section class="about-story-grid">
+      <article class="story-card-modern">
+        <div class="card-icon-box">
+          <i class="fas fa-compass-drafting"></i>
+        </div>
+        <h3>Who We Are</h3>
+        <p>
+          ShonkuWeb is a specialized AI systems engineering studio. We build production-grade Customer Support AI Agents, custom multi-agent automations, and resilient web/mobile interfaces for ambitious founders and growing companies.
         </p>
-        <div class="meta">
-          <span class="meta-pill">Design → Development → Deployment</span>
-          <span class="meta-pill">Web · iOS · Android · AI Ops</span>
+        <p>
+          We don't sell vaporware or build surface-level wrappers. Every agent we deploy is grounded in proprietary vector knowledge, guarded by deterministic security layers, and tied directly into mission-critical APIs.
+        </p>
+        <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-light); font-size: 0.9rem; color: var(--text-muted);">
+          Founded by <a href="https://x.com/IMJITA1" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); font-weight: 600;">@shibam</a> & <a href="https://x.com/ImJitD" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); font-weight: 600;">@JitD</a>
         </div>
-      </div>
+      </article>
+
+      <article class="story-card-modern">
+        <div class="card-icon-box">
+          <i class="fas fa-flask"></i>
+        </div>
+        <h3>Inspired by Professor Shonku</h3>
+        <p>
+          Our name is a deliberate homage to <strong>Professor Trilokeshwar Shonku</strong>, the legendary scientist and polymath created by Satyajit Ray. In the stories, Professor Shonku invented futuristic marvels from his quiet laboratory in Giridih—from the autonomous robot <em>Bidhushekhar</em> to anti-gravity formulas and universal translators.
+        </p>
+        <p>
+          His spirit of fearless experimentation, scientific integrity, and audacious problem-solving guides every line of code we write and every agent architecture we deploy today.
+        </p>
+      </article>
     </section>
 
-    <section class="section about-story" id="section3">
-      <div class="story-grid">
-        <article class="story-card">
-          <h2>Who We Are</h2>
-          <p>
-            ShonkuWeb is a modern technology agency dedicated to building smart, scalable,
-            and impactful digital solutions for small and medium businesses. We blend
-            creativity with engineering excellence to craft products that move fast,
-            feel effortless, and perform reliably.
+    <!-- Core Values -->
+    <section class="section" style="padding-top: 0;">
+      <div class="section-header">
+        <p class="section-eyebrow">OUR OPERATIONAL CODE</p>
+        <h2 class="section-title">Built on Clarity, Speed & Craft</h2>
+        <p class="section-description">
+          The three non-negotiable principles that drive our engineering team.
+        </p>
+      </div>
+
+      <div class="values-grid-modern">
+        <div class="capability-card">
+          <div class="capability-icon">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h4 class="capability-title">Engineering Rigor</h4>
+          <p class="capability-desc">
+            We prioritize deterministic outputs, clean system architecture, low latency, and comprehensive automated test suites over superficial demos.
           </p>
+        </div>
 
-          <p class="founders">
-            Founded by <a href="https://x.com/IMJITA1" target="_blank" rel="noopener noreferrer">@shibam</a> & <a
-              href="https://x.com/ImJitD" target="_blank" rel="noopener noreferrer">@JitD</a>
+        <div class="capability-card">
+          <div class="capability-icon">
+            <i class="fas fa-shield-cat"></i>
+          </div>
+          <h4 class="capability-title">Zero-Hallucination Integrity</h4>
+          <p class="capability-desc">
+            Our agents do not hallucinate or guess. If an answer cannot be verified with mathematical certainty against your knowledge base, it safely escalates.
           </p>
-        </article>
+        </div>
 
-        <article class="story-card">
-          <h2>Inspired by Professor Shonku</h2>
-          <p>Our name pays homage to Professor Shonku, the brilliant fictional scientist from Satyajit Ray’s universe.
-            His spirit of experimentation, bold thinking, and relentless innovation guides our approach to product
-            strategy, design systems, and technical delivery.</p>
-        </article>
-
-        <article class="story-card story-span">
-          <h2>What We Do</h2>
-          <p>We design intuitive websites, build robust iOS and Android applications, and deploy intelligent AI-driven
-            customer support systems. From UX research and interface design to infrastructure setup and post-launch
-            management, we own the entire stack so clients can stay focused on their business.</p>
-        </article>
+        <div class="capability-card">
+          <div class="capability-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h4 class="capability-title">Relentless Velocity</h4>
+          <p class="capability-desc">
+            We move from discovery audit to live production deployments in 2 to 3 weeks, giving our partners an immediate technological edge over competitors.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section class="section about-focus">
-      <div class="focus-content">
-        <div class="focus-text">
-          <p class="eyebrow">Our Focus</p>
-          <h2>Technology That Accelerates Growth</h2>
-          <p>We work closely with SMB teams to understand their constraints, workflows, and growth goals. Every
-            deliverable is built to be simple to operate, reliable under load, and ready to scale. Whether you need
-            automation, customer experience upgrades, or new revenue channels, we make advanced tech accessible and
-            effective.</p>
-        </div>
-        <ul class="focus-points">
-          <li>
-            <span>Human-centered design</span>
-            <p>Interfaces that communicate clearly and reduce friction.</p>
-          </li>
-          <li>
-            <span>Engineering rigor</span>
-            <p>Clean architecture, automated deployments, and resilient infra.</p>
-          </li>
-          <li>
-            <span>AI-enabled operations</span>
-            <p>Automation, conversational support, and insight loops tuned to your data.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section about-values">
-      <div class="values-container">
-        <div class="values-intro">
-          <p class="eyebrow">What Drives Us</p>
-          <h2>Built On Curiosity, Clarity & Craft</h2>
-          <p>We champion transparency, pragmatic problem solving, and measurable outcomes—carrying forward the
-            imaginative legacy of Professor Shonku into everyday business innovation.</p>
-        </div>
-        <div class="values-grid">
-          <article class="value-card">
-            <h3>Curiosity</h3>
-            <p>Every project starts with questions, experiments, and a drive to discover better answers.</p>
-          </article>
-          <article class="value-card">
-            <h3>Transparency</h3>
-            <p>Weekly demos, open documentation, and honest guidance keep partners informed at every step.</p>
-          </article>
-          <article class="value-card">
-            <h3>Problem-Solving</h3>
-            <p>We focus on business outcomes, not buzzwords—building systems that are dependable, adaptable, and ready
-              for real-world scale.</p>
-          </article>
+    <!-- High-Converting CTA Banner -->
+    <section class="cta-section">
+      <div class="cta-banner-card">
+        <div class="cta-content">
+          <h2 class="cta-title">Collaborate with Our AI Engineering Team</h2>
+          <p class="cta-desc">
+            Ready to explore how custom AI agents can eliminate operational bottlenecks in your business? We’d love to speak with you.
+          </p>
+          <div class="cta-actions">
+            <a href="/contactus/" class="btn-cta-light">
+              <span>Book Strategy Call</span>
+              <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+            </a>
+            <a href="/services/" class="btn-cta-ghost">
+              <span>Explore AI Services</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <!-- Footer Section -->
-  <section class="section footer" id="section4">
-    <footer class="footer-container">
 
-      <div class="footer-message">
-        <h2>Thank You for Visiting ShonkuWeb</h2>
-        <p>We appreciate your time and interest. Let's build something extraordinary together — from concept to
-          deployment, we're here to make it happen.</p>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-main-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo-container" style="margin-bottom: 16px;">
+            <div class="logo-icon"><i class="fas fa-sparkles"></i></div>
+            <span class="logo-text">ShonkuWeb</span>
+          </a>
+          <p>
+            An elite engineering studio crafting production-grade Customer Support AI Agents, custom AI Automations, and high-performance digital platforms.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://x.com/shonkuweb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter)">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://youtube.com/@ShonkuWeb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com/shonkuweb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Core Solutions</h4>
+          <ul>
+            <li><a href="/services/#customer-support-ai">Customer Support AI</a></li>
+            <li><a href="/services/#custom-ai-automations">Custom AI Automations</a></li>
+            <li><a href="/services/#ai-web-apps">AI-Native Web Apps</a></li>
+            <li><a href="/services/#enterprise-guardrails">Enterprise Guardrails</a></li>
+            <li><a href="/bidhushekhar/">BidhuShekar Lab</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/aboutus/">About Us</a></li>
+            <li><a href="/contactus/">Contact & Scoping</a></li>
+            <li><a href="https://x.com/IMJITA1" target="_blank" rel="noopener noreferrer">@shibam</a></li>
+            <li><a href="https://x.com/ImJitD" target="_blank" rel="noopener noreferrer">@JitD</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Policies</h4>
+          <ul>
+            <li><a href="/terms&amp;conditions/">Terms & Conditions</a></li>
+            <li><a href="/cancellation-refund-policy/">Cancellation & Refund</a></li>
+            <li><a href="/shipping-delivery-policy/">Delivery Policy</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-links">
-        <a href="/aboutus/">About Us</a>
-        <a href="/terms&amp;conditions/">Terms & Conditions</a>
-        <a href="/cancellation-refund-policy/">Cancellation Policy</a>
-        <a href="/contactus/">Contact Us</a>
+      <div class="footer-bottom">
+        <p>© 2026 ShonkuWeb. All rights reserved. Built for autonomous scale.</p>
+        <p>Engineered with precision for modern enterprises.</p>
       </div>
+    </div>
+  </footer>
 
-      <div class="footer-cta">
-        <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
-          <i class="fas fa-arrow-up" aria-hidden="true"></i>
-          Back to top
-        </a>
-      </div>
-
-      <div class="footer-socials">
-        <a href="https://x.com/shonkuweb" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-          <i class="fab fa-x-twitter"></i>
-        </a>
-        <a href="https://youtube.com/@ShonkuWeb" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://instagram.com/shonkuweb" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-
-      <p class="footer-copy">© 2025 ShonkuWeb. All rights reserved.</p>
-    </footer>
-  </section>
   <script src="/script.js"></script>
 </body>
 

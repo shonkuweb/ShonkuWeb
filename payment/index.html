@@ -2,138 +2,163 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Secure checkout for ShonkuWeb services. Complete your payment safely.">
-    <meta name="keywords" content="payment, checkout, ShonkuWeb">
-    <meta property="og:title" content="Secure Checkout | ShonkuWeb">
-    <meta property="og:description" content="Complete your payment securely with ShonkuWeb.">
-    <meta property="og:type" content="website">
-    <link rel="canonical" href="https://shonkuweb.com/payment/">
-    <title>Secure Checkout | ShonkuWeb</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Vercel Analytics -->
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
-    <!-- Vercel Speed Insights -->
-    <script>
-      window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/speed-insights/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Secure Client Billing Portal for ShonkuWeb AI Engineering Services.">
+  <meta name="keywords" content="billing, client portal, ShonkuWeb">
+  <meta property="og:title" content="Client Portal | ShonkuWeb">
+  <meta property="og:description" content="Dedicated billing and private milestone invoicing portal for ShonkuWeb clients.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://shonkuweb.com/payment/">
+  <title>Client Invoicing Portal | ShonkuWeb</title>
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Vercel Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <!-- Vercel Speed Insights -->
+  <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 
 <body>
-    <div id="section1"></div>
-    <header>
-        <nav class="navbar">
-            <div class="logo">ShonkuWeb</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="/">Home</a></li>
-                <li><a href="/aboutus/">About Us</a></li>
-                <li><a href="/services/">Services</a></li>
-                <li><a href="/contactus/">Contact Us</a></li>
-                <li><a href="/terms&amp;conditions/">Terms</a></li>
-                <li><a href="/cancellation-refund-policy/">Cancellation</a></li>
-                <li><a href="/shipping-delivery-policy/">Shipping Policy</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="/" class="logo-container">
+        <div class="logo-icon">
+          <i class="fas fa-sparkles"></i>
+        </div>
+        <span class="logo-text">ShonkuWeb</span>
+        <span class="logo-tag">AI STUDIO</span>
+      </a>
 
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/aboutus/">About Us</a></li>
+        <li><a href="/bidhushekhar/">BidhuShekar <span class="badge badge-purple" style="font-size: 0.65rem; padding: 2px 6px;">LAB</span></a></li>
+        <li><a href="/contactus/">Contact Us</a></li>
+      </ul>
 
-    <main class="payment-wrapper">
-        <section class="payment-container" style="text-align: center; padding: 100px 20px;">
-            <div class="coming-soon-message">
-                <i class="fas fa-wallet" style="font-size: 4rem; color: #4285F4; margin-bottom: 20px;"></i>
-                <h1 style="font-size: 2.5rem; margin-bottom: 15px;">Google Pay Wallet Integration</h1>
-                <p style="font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto;">
-                    We will integrate the Google Pay Wallet API checkout system here once approved.
-                    <br><br>
-                    <strong>Coming Soon</strong>
-                </p>
-            </div>
-        </section>
-    </main>
+      <div class="nav-actions">
+        <a href="/contactus/" class="btn btn-primary btn-sm">
+          <span>Book Strategy Call</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
 
-    <!-- Footer Section -->
-    <section class="section footer" id="section4">
-        <footer class="footer-container">
-            <div class="footer-message">
-                <h2>Thank You for Visiting ShonkuWeb</h2>
-                <p>We appreciate your time and interest. Let's build something extraordinary together — from concept to
-                    deployment, we're here to make it happen.</p>
-            </div>
-            <div class="footer-links">
-                <a href="/aboutus/">About Us</a>
-                <a href="/terms&amp;conditions/">Terms & Conditions</a>
-                <a href="/cancellation-refund-policy/">Cancellation Policy</a>
-                <a href="/contactus/">Contact Us</a>
-            </div>
-            <div class="footer-cta">
-                <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
-                    <i class="fas fa-arrow-up" aria-hidden="true"></i> Back to top
-                </a>
-            </div>
-            <div class="footer-socials">
-                <a href="https://x.com/shonkuweb" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-                    <i class="fab fa-x-twitter"></i>
-                </a>
-                <a href="https://youtube.com/@ShonkuWeb" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://instagram.com/shonkuweb" target="_blank" rel="noopener noreferrer"
-                    aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-            <p class="footer-copy">© 2025 ShonkuWeb. All rights reserved.</p>
-        </footer>
-    </section>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
 
-    <script src="/script.js"></script>
-    <script>
-        // Simple script to handle URL params for plan selection
-        document.addEventListener('DOMContentLoaded', () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const plan = urlParams.get('plan');
+  <main>
+    <div class="contact-wrapper" style="text-align: center; max-width: 680px;">
+      <article class="legal-card" style="padding: 60px 32px;">
+        <div class="card-icon-box" style="margin: 0 auto 20px;">
+          <i class="fas fa-shield-halved" style="color: var(--brand-indigo);"></i>
+        </div>
 
-            const planNameEl = document.getElementById('planName');
-            const planPriceEl = document.getElementById('planPrice');
-            const subtotalEl = document.getElementById('subtotal');
-            const taxEl = document.getElementById('tax');
-            const totalEl = document.getElementById('total');
+        <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 14px;">Private Client Invoicing Portal</h1>
+        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 30px;">
+          All ShonkuWeb engineering engagements are billed on customized milestone agreements. Verified clients receive encrypted one-time payment links and wire transfer directives directly with their authorized Statement of Work (SOW).
+        </p>
 
-            let price = 0;
-            let name = "Select a Plan";
+        <div style="background: #f8fafc; border: 1px solid var(--border-default); border-radius: var(--radius-md); padding: 20px; margin-bottom: 30px; text-align: left;">
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">
+            <i class="fas fa-lock" style="color: #10b981;"></i> Enterprise Payment Security
+          </div>
+          <div style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;">
+            Supported settlement rails include Stripe Enterprise, Razorpay, Automated ACH, and International SWIFT Wire Transfers.
+          </div>
+        </div>
 
-            if (plan === 'starting') {
-                name = "Starting Plan";
-                price = 19900;
-            } else if (plan === 'medium') {
-                name = "Medium Plan";
-                price = 25900;
-            }
+        <a href="/contactus/" class="btn btn-primary btn-lg">
+          <span>Contact Accounts / Scoping Team</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </article>
+    </div>
+  </main>
 
-            const tax = price * 0.18;
-            const total = price + tax;
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-main-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo-container" style="margin-bottom: 16px;">
+            <div class="logo-icon"><i class="fas fa-sparkles"></i></div>
+            <span class="logo-text">ShonkuWeb</span>
+          </a>
+          <p>
+            An elite engineering studio crafting production-grade Customer Support AI Agents, custom AI Automations, and high-performance digital platforms.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://x.com/shonkuweb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter)">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://youtube.com/@ShonkuWeb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com/shonkuweb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
 
-            planNameEl.textContent = name;
+        <div class="footer-col">
+          <h4>Core Solutions</h4>
+          <ul>
+            <li><a href="/services/#customer-support-ai">Customer Support AI</a></li>
+            <li><a href="/services/#custom-ai-automations">Custom AI Automations</a></li>
+            <li><a href="/services/#ai-web-apps">AI-Native Web Apps</a></li>
+            <li><a href="/services/#enterprise-guardrails">Enterprise Guardrails</a></li>
+            <li><a href="/bidhushekhar/">BidhuShekar Lab</a></li>
+          </ul>
+        </div>
 
-            const formatCurrency = (num) => '₹' + num.toLocaleString('en-IN');
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/aboutus/">About Us</a></li>
+            <li><a href="/contactus/">Contact & Scoping</a></li>
+            <li><a href="https://x.com/IMJITA1" target="_blank" rel="noopener noreferrer">@shibam</a></li>
+            <li><a href="https://x.com/ImJitD" target="_blank" rel="noopener noreferrer">@JitD</a></li>
+          </ul>
+        </div>
 
-            planPriceEl.textContent = formatCurrency(price);
-            subtotalEl.textContent = formatCurrency(price);
-            taxEl.textContent = formatCurrency(tax);
-            totalEl.textContent = formatCurrency(total);
-        });
-    </script>
+        <div class="footer-col">
+          <h4>Legal & Policies</h4>
+          <ul>
+            <li><a href="/terms&amp;conditions/">Terms & Conditions</a></li>
+            <li><a href="/cancellation-refund-policy/">Cancellation & Refund</a></li>
+            <li><a href="/shipping-delivery-policy/">Delivery Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 ShonkuWeb. All rights reserved. Built for autonomous scale.</p>
+        <p>Engineered with precision for modern enterprises.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
 </body>
 
 </html>

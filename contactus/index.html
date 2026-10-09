@@ -3,17 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="description"
-    content="Contact ShonkuWeb - Get in touch for web development, e-commerce, and digital solutions. We respond within one business day.">
-  <meta name="keywords" content="contact ShonkuWeb, web development inquiry, get quote, digital solutions">
-  <meta property="og:title" content="Contact Us | ShonkuWeb">
-  <meta property="og:description" content="Tell us about your project. We'll get back to you within one business day.">
+    content="Contact ShonkuWeb — Book a technical scoping consultation for Customer Support AI Agents, Custom AI Automations, and AI-native applications. Response within 1 business day.">
+  <meta name="keywords" content="contact ShonkuWeb, hire AI studio, AI agent consultation, AI automation scoping">
+  <meta property="og:title" content="Contact & AI Scoping | ShonkuWeb">
+  <meta property="og:description"
+    content="Tell us about your operational bottlenecks or customer support volume. We'll formulate a tailored AI architecture within 24 hours.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://shonkuweb.com/contactus/">
-  <title>Contact Us | ShonkuWeb</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>Contact & AI Scoping | ShonkuWeb</title>
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+
   <!-- Vercel Analytics -->
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -27,274 +34,199 @@
 </head>
 
 <body>
-  <div id="section1"></div>
+  <!-- Header / Navigation -->
   <header>
     <nav class="navbar">
-      <div class="logo">ShonkuWeb</div>
+      <a href="/" class="logo-container">
+        <div class="logo-icon">
+          <i class="fas fa-sparkles"></i>
+        </div>
+        <span class="logo-text">ShonkuWeb</span>
+        <span class="logo-tag">AI STUDIO</span>
+      </a>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="/">Home</a></li>
-        <li><a href="/aboutus/">About Us</a></li>
         <li><a href="/services/">Services</a></li>
-        <li><a href="/contactus/">Contact Us</a></li>
-        <li><a href="/terms&amp;conditions/">Terms</a></li>
-        <li><a href="/cancellation-refund-policy/">Cancellation</a></li>
-        <li><a href="/shipping-delivery-policy/">Shipping Policy</a></li>
+        <li><a href="/aboutus/">About Us</a></li>
+        <li><a href="/bidhushekhar/">BidhuShekar <span class="badge badge-purple" style="font-size: 0.65rem; padding: 2px 6px;">LAB</span></a></li>
+        <li><a href="/contactus/" class="active">Contact Us</a></li>
       </ul>
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <div class="nav-actions">
+        <a href="/contactus/" class="btn btn-primary btn-sm">
+          <span>Book Strategy Call</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   </header>
 
-  <!-- Fullscreen Sections -->
-  <!-- Contact Section -->
-  <section class="section" id="section2">
-    <div class="contact-container">
-      <h2 class="contact-title">Contact Us</h2>
-      <p class="contact-subtitle">Tell us about your project — we'll get back to you within one business day.</p>
+  <main>
+    <div class="contact-wrapper">
+      <div class="contact-grid">
+        <!-- Info Column -->
+        <div class="contact-info-panel">
+          <div>
+            <div class="status-pill">
+              <span class="pulse-dot"></span>
+              <span>Direct Engineering Access</span>
+            </div>
 
-      <form class="contact-form" action="#" method="post" novalidate>
-        <div class="form-row">
-          <label class="form-field">
-            <span class="form-label">Business Name</span>
-            <input type="text" name="business_name" placeholder="Your business or company name" required>
-          </label>
+            <h1>Let’s Engineer Your Autonomous AI System</h1>
+            <p>
+              Tell us about your support ticket backlog, manual back-office bottlenecks, or product vision. Our AI systems architects will review your requirements and provide an actionable technical blueprint.
+            </p>
 
-          <label class="form-field">
-            <span class="form-label">Mobile Number</span>
-            <input type="tel" name="mobile" id="mobileInput" placeholder="10-digit mobile number" required
-              pattern="[0-9]{10}" minlength="10" maxlength="10" inputmode="numeric"
-              title="Please enter exactly 10 digits (numbers only).">
-          </label>
+            <ul class="contact-benefit-list">
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Direct consultation with an AI Systems Architect</span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Guaranteed response within 1 business day</span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Tailored architecture & ROI feasibility proposal</span>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <span>Full NDA protection and enterprise privacy adherence</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border-light);">
+            <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 8px;">
+              Direct Inquiries
+            </div>
+            <div style="font-size: 0.94rem; color: var(--text-primary); font-weight: 500;">
+              <a href="mailto:contact@shonkuweb.com" style="color: var(--brand-blue);"><i class="fas fa-envelope"></i> contact@shonkuweb.com</a>
+            </div>
+            <div style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;">
+              Worldwide Remote Operations • HQ India
+            </div>
+          </div>
         </div>
 
-        <div class="form-row single">
-          <label class="form-field">
-            <span class="form-label">Email</span>
-            <input type="email" name="email" placeholder="you@company.com" required>
-          </label>
-        </div>
+        <!-- Form Column -->
+        <div>
+          <form class="contact-form" action="#" method="POST" novalidate>
+            <div class="form-group">
+              <label for="business_name">Business or Company Name *</label>
+              <input type="text" id="business_name" name="business_name" class="form-control" placeholder="e.g. Acme Corp" required>
+            </div>
 
-        <div class="form-row single">
-          <label class="form-field">
-            <span class="form-label">Services</span>
-            <select name="service" required>
-              <option value="">-- Select a service --</option>
-              <option value="web_development">Web Development</option>
-              <option value="ios_development">iOS Development</option>
-              <option value="android_development">Android Development</option>
-              <option value="Customer Support AI">Customer Support AI</option>
-            </select>
-          </label>
-        </div>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="email">Work Email *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="you@company.com" required>
+              </div>
 
-        <div class="form-row single">
-          <label class="form-field">
-            <span class="form-label">Message (optional)</span>
-            <textarea name="message" rows="5"
-              placeholder="Brief description of your project, timeline and budget (optional)"></textarea>
-          </label>
-        </div>
+              <div class="form-group">
+                <label for="mobile">Mobile Number *</label>
+                <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="10-digit phone number" required pattern="[0-9]{10}" maxlength="10">
+              </div>
+            </div>
 
-        <div class="form-actions">
-          <button type="submit" class="btn-primary">Send Message</button>
-        </div>
-      </form>
+            <div class="form-group">
+              <label for="service">Target AI Solution *</label>
+              <select id="service" name="service" class="form-control" required>
+                <option value="">-- Select AI Solution --</option>
+                <option value="Customer Support AI Agent">Customer Support AI Agent (24/7 Autonomous)</option>
+                <option value="Custom AI Automation Workflow">Custom AI Automation & Multi-Agent Workflow</option>
+                <option value="AI-Native Web / Mobile App">AI-Native Web or Mobile Application</option>
+                <option value="Enterprise AI Architecture Audit">Enterprise AI Architecture & Scoping Session</option>
+              </select>
+            </div>
 
-      <div class="contact-info">
-        <div class="contact-info-item">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:shonkuweb@gmail.com">shonkuweb@gmail.com</a>
-        </div>
-        <div class="contact-info-item">
-          <i class="fas fa-phone"></i>
-          <a href="tel:+916289417338">+91 6289417338</a>
-        </div>
-        <div class="contact-info-item">
-          <i class="fab fa-whatsapp"></i>
-          <a href="https://wa.me/916289417338" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp
-            us</a>
+            <div class="form-group">
+              <label for="message">Project Description & Current Bottlenecks</label>
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Briefly describe your support volume, manual processes, or data tools you want connected (optional)"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <span>Submit Scoping Request</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
         </div>
       </div>
     </div>
+  </main>
 
-    <!-- Toast notification -->
-    <div id="toast" class="toast" role="alert" aria-live="polite">
-      <span id="toast-message"></span>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-main-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo-container" style="margin-bottom: 16px;">
+            <div class="logo-icon"><i class="fas fa-sparkles"></i></div>
+            <span class="logo-text">ShonkuWeb</span>
+          </a>
+          <p>
+            An elite engineering studio crafting production-grade Customer Support AI Agents, custom AI Automations, and high-performance digital platforms.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://x.com/shonkuweb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X (Twitter)">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://youtube.com/@ShonkuWeb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com/shonkuweb" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Core Solutions</h4>
+          <ul>
+            <li><a href="/services/#customer-support-ai">Customer Support AI</a></li>
+            <li><a href="/services/#custom-ai-automations">Custom AI Automations</a></li>
+            <li><a href="/services/#ai-web-apps">AI-Native Web Apps</a></li>
+            <li><a href="/services/#enterprise-guardrails">Enterprise Guardrails</a></li>
+            <li><a href="/bidhushekhar/">BidhuShekar Lab</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/aboutus/">About Us</a></li>
+            <li><a href="/contactus/">Contact & Scoping</a></li>
+            <li><a href="https://x.com/IMJITA1" target="_blank" rel="noopener noreferrer">@shibam</a></li>
+            <li><a href="https://x.com/ImJitD" target="_blank" rel="noopener noreferrer">@JitD</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Policies</h4>
+          <ul>
+            <li><a href="/terms&amp;conditions/">Terms & Conditions</a></li>
+            <li><a href="/cancellation-refund-policy/">Cancellation & Refund</a></li>
+            <li><a href="/shipping-delivery-policy/">Delivery Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 ShonkuWeb. All rights reserved. Built for autonomous scale.</p>
+        <p>Engineered with precision for modern enterprises.</p>
+      </div>
     </div>
+  </footer>
 
-    <!-- Hidden iframe for Google Sheets submission -->
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-  </section>
-
-  <section class="section footer" id="section4">
-    <footer class="footer-container">
-
-      <div class="footer-message">
-        <h2>Thank You for Visiting ShonkuWeb</h2>
-        <p>We appreciate your time and interest. Let's build something extraordinary together — from concept to
-          deployment, we're here to make it happen.</p>
-      </div>
-
-      <div class="footer-links">
-        <a href="/aboutus/">About Us</a>
-        <a href="/terms&amp;conditions/">Terms & Conditions</a>
-        <a href="/cancellation-refund-policy/">Cancellation Policy</a>
-        <a href="/contactus/">Contact Us</a>
-      </div>
-
-      <div class="footer-cta">
-        <a href="#section1" class="footer-cta-btn" aria-label="Back to top">
-          <i class="fas fa-arrow-up" aria-hidden="true"></i>
-          Back to top
-        </a>
-      </div>
-
-      <div class="footer-socials">
-        <a href="https://x.com/shonkuweb" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-          <i class="fab fa-x-twitter"></i>
-        </a>
-        <a href="https://youtube.com/@ShonkuWeb" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://instagram.com/shonkuweb" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-
-      <p class="footer-copy">© 2025 ShonkuWeb. All rights reserved.</p>
-    </footer>
-  </section>
   <script src="/script.js"></script>
-  <!-- Firebase Firestore submit (page-specific) -->
-  <script>
-    // Toast notification function
-    function showToast(message, isError = false) {
-      const toast = document.getElementById('toast');
-      const toastMessage = document.getElementById('toast-message');
-      if (!toast || !toastMessage) return;
-
-      toastMessage.textContent = message;
-      toast.classList.remove('error');
-      if (isError) {
-        toast.classList.add('error');
-      }
-
-      toast.classList.add('show');
-      setTimeout(() => {
-        toast.classList.remove('show');
-      }, 4000);
-    }
-
-    // Auto-format mobile input: only allow digits, max 10
-    const mobileInput = document.getElementById('mobileInput');
-    if (mobileInput) {
-      mobileInput.addEventListener('input', (e) => {
-        // Remove any non-digit characters
-        let value = e.target.value.replace(/\D/g, '');
-        // Limit to 10 digits
-        if (value.length > 10) {
-          value = value.slice(0, 10);
-        }
-        e.target.value = value;
-      });
-
-      // Prevent paste of non-numeric content
-      mobileInput.addEventListener('paste', (e) => {
-        e.preventDefault();
-        const paste = (e.clipboardData || window.clipboardData).getData('text');
-        const digits = paste.replace(/\D/g, '').slice(0, 10);
-        mobileInput.value = digits;
-      });
-    }
-
-    const form = document.querySelector('.contact-form');
-    // Google Apps Script Web App URL
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz2lQHdzcW6ioUSG1LijYZkVSpmqm968aEZL8TXm60o-AnHbzQ9VCR7GmQiLfpOFvMx/exec';
-
-    if (form) {
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn ? submitBtn.textContent : '';
-        if (submitBtn) {
-          submitBtn.disabled = true;
-          submitBtn.textContent = 'Sending...';
-        }
-        try {
-          // Block submission if required inputs are not valid
-          if (!form.checkValidity()) {
-            if (submitBtn) {
-              submitBtn.disabled = false;
-              submitBtn.textContent = originalText || 'Send Message';
-            }
-            form.reportValidity();
-            return;
-          }
-
-          const formData = new FormData(form);
-          // Normalize and validate mobile to exactly 10 digits
-          const rawMobile = (formData.get('mobile')?.toString() || '').replace(/\D/g, '');
-          if (rawMobile.length !== 10) {
-            if (submitBtn) {
-              submitBtn.disabled = false;
-              submitBtn.textContent = originalText || 'Send Message';
-            }
-            showToast('Please enter a valid 10-digit mobile number.', true);
-            const mobileField = document.getElementById('mobileInput');
-            if (mobileField) {
-              mobileField.focus();
-            }
-            return;
-          }
-
-          // Create a hidden form to submit to Google Sheets via iframe
-          const hiddenForm = document.createElement('form');
-          hiddenForm.method = 'POST';
-          hiddenForm.action = GOOGLE_SCRIPT_URL;
-          hiddenForm.target = 'hidden_iframe';
-          hiddenForm.style.display = 'none';
-
-          // Add form fields
-          const fields = {
-            business_name: formData.get('business_name') || '',
-            mobile: rawMobile,
-            email: formData.get('email') || '',
-            service: formData.get('service') || '',
-            message: formData.get('message') || ''
-          };
-
-          for (const [key, value] of Object.entries(fields)) {
-            const input = document.createElement('input');
-            input.type = 'hidden';
-            input.name = key;
-            input.value = value;
-            hiddenForm.appendChild(input);
-          }
-
-          document.body.appendChild(hiddenForm);
-          hiddenForm.submit();
-          document.body.removeChild(hiddenForm);
-
-          // Wait a moment for submission to complete
-          await new Promise(resolve => setTimeout(resolve, 1000));
-
-          showToast('Message sent successfully! We will contact you soon.');
-          form.reset();
-        } catch (err) {
-          console.error('Contact form submission failed:', err);
-          showToast('Something went wrong. Please try again later.', true);
-        } finally {
-          if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalText || 'Send Message';
-          }
-        }
-      });
-    }
-  </script>
 </body>
 
 </html>
