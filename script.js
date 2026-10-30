@@ -1,5 +1,5 @@
 /**
- * ShonkuWeb — Premium AI-First Startup Interactions & Runtime Simulator
+ * ShonkuWEB — Premium AI-First Startup Interactions & Runtime Simulator
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -102,7 +102,7 @@ function initAiPlayground() {
   function simulateAgentResponse(scenarioKey, customText) {
     const scenario = demoScenarios[scenarioKey] || {
       user: customText || "How can your autonomous agents scale our customer operations?",
-      agentText: "ShonkuWeb autonomous agents connect directly to your custom knowledge bases, ticketing systems, and internal REST APIs. They resolve up to 84% of user inquiries without human intervention, respect strict security guardrails, and seamlessly escalate complex cases to human staff with full context.",
+      agentText: "ShonkuWEB autonomous agents connect directly to your custom knowledge bases, ticketing systems, and internal REST APIs. They resolve up to 84% of user inquiries without human intervention, respect strict security guardrails, and seamlessly escalate complex cases to human staff with full context.",
       tool: "Tool Executed: rag_knowledge_base.semantic_search()",
       latency: "210ms"
     };
@@ -274,7 +274,7 @@ function initContactForm() {
             line-height: 1.5;
             text-align: center;
           `;
-          feedback.innerHTML = `<strong>Thank you!</strong> An AI Systems Architect from ShonkuWeb will review your requirements and reach out within 1 business day.`;
+          feedback.innerHTML = `<strong>Thank you!</strong> An AI Systems Architect from ShonkuWEB will review your requirements and reach out within 1 business day.`;
           
           contactForm.appendChild(feedback);
           contactForm.reset();

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 760" role="img" aria-labelledby="hero-art-title hero-art-desc">
+  <title id="hero-art-title">A considered storefront, connected to customer insight</title>
+  <desc id="hero-art-desc">An illustrative premium storefront features a sculpted everyday tote, with a floating customer-signals card connecting browsing to an order.</desc>
+  <defs>
+    <radialGradient id="hero-glow"><stop stop-color="#e3e9d5"/><stop offset="1" stop-color="#f7f6f2" stop-opacity="0"/></radialGradient>
+    <linearGradient id="hero-stage" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e1e6d7"/><stop offset=".6" stop-color="#eeeee5"/><stop offset="1" stop-color="#f3e7d8"/></linearGradient>
+    <linearGradient id="hero-leather" x1="0" y1="0" x2="1" y2=".4"><stop stop-color="#967455"/><stop offset=".15" stop-color="#bb9470"/><stop offset=".5" stop-color="#d4b48e"/><stop offset=".86" stop-color="#c39f79"/><stop offset="1" stop-color="#a17b59"/></linearGradient>
+    <linearGradient id="hero-side" x1="0" x2="1"><stop stop-color="#927050"/><stop offset="1" stop-color="#bf9974"/></linearGradient>
+    <linearGradient id="hero-plinth" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f6f2e9"/><stop offset="1" stop-color="#d8d6c5"/></linearGradient>
+    <linearGradient id="hero-panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#334636"/><stop offset="1" stop-color="#1c2d23"/></linearGradient>
+    <linearGradient id="hero-trend" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d5e6a4" stop-opacity=".22"/><stop offset="1" stop-color="#d5e6a4" stop-opacity="0"/></linearGradient>
+    <filter id="hero-shadow" x="-40%" y="-30%" width="180%" height="200%"><feDropShadow dx="0" dy="30" stdDeviation="24" flood-color="#344630" flood-opacity=".12"/><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#344630" flood-opacity=".05"/></filter>
+    <filter id="hero-soft-shadow" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#344630" flood-opacity=".12"/></filter>
+    <filter id="hero-product-shadow"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <ellipse cx="419" cy="355" rx="386" ry="331" fill="url(#hero-glow)"/>
+  <g fill="none" stroke="#b8c3aa" stroke-width=".8" opacity=".5">
+    <ellipse cx="412" cy="369" rx="321" ry="272" transform="rotate(-19 412 369)"/>
+    <path d="M73 477c59 168 388 246 624 70" stroke-dasharray="2 8"/>
+  </g>
+
+  <circle cx="117" cy="520" r="3" fill="#a9b99b"/>
+  <g transform="rotate(-4 407 346)" filter="url(#hero-shadow)">
+    <rect x="142" y="111" width="532" height="485" rx="13" fill="#e5e8dc"/>
+    <rect x="138" y="105" width="532" height="485" rx="13" fill="#fffef9" stroke="#cdd3c1"/>
+    <path d="M151 105h506a13 13 0 0 1 13 13v15H138v-15a13 13 0 0 1 13-13" fill="#f0f0e8"/>
+    <g fill="#bfc7b5"><circle cx="155" cy="119" r="2.5"/><circle cx="165" cy="119" r="2.5"/><circle cx="175" cy="119" r="2.5"/></g>
+
+    <text x="405" y="122" text-anchor="middle" fill="#7d8773" font-family="Arial,sans-serif" font-size="8">yourbrand.store</text>
+    <text x="163" y="174" fill="#26392b" font-family="Georgia,serif" font-size="25" letter-spacing="-1">everyday<tspan fill="#bd633f">.</tspan></text>
+    <g font-family="Arial,sans-serif" font-size="8" fill="#717c66"><text x="464" y="167">COLLECTION</text><text x="548" y="167">OUR STORY</text></g>
+    <path d="M627 159h11l2 12h-15zm2 0v-3a3 3 0 0 1 6 0v3" fill="none" stroke="#3b4c34" stroke-width="1"/>
+    <rect x="158" y="195" width="492" height="259" rx="5" fill="url(#hero-stage)"/>
+    <circle cx="535" cy="311" r="95" fill="#d9ddcc" opacity=".6"/>
+    <circle cx="535" cy="311" r="74" fill="none" stroke="#c5ccba" stroke-width=".6"/>
+    <text x="183" y="232" font-family="Arial,sans-serif" font-size="7" fill="#728064" letter-spacing="1.6">A CONSIDERED COLLECTION</text>
+    <text x="182" y="281" font-family="Georgia,serif" font-size="31" fill="#293d2c" letter-spacing="-1">Objects for</text>
+    <text x="182" y="319" font-family="Georgia,serif" font-size="31" fill="#293d2c" letter-spacing="-1">the everyday.</text>
+    <text x="184" y="350" font-family="Arial,sans-serif" font-size="8" fill="#7c8572">Thoughtfully made. Yours to discover.</text>
+    <path d="M183 379h86m-6-4 6 4-6 4" fill="none" stroke="#5d6f50" stroke-width=".8"/>
+    <ellipse cx="525" cy="427" rx="92" ry="12" fill="#8b927a" opacity=".14" filter="url(#hero-product-shadow)"/>
+    <path d="M431 407v25c0 16 190 16 190 0v-25" fill="url(#hero-plinth)"/>
+    <ellipse cx="526" cy="407" rx="95" ry="14" fill="#f1eee5" stroke="#dadbcd" stroke-width=".7"/>
+    <ellipse cx="529" cy="402" rx="59" ry="6" fill="#8b6c4f" opacity=".15" filter="url(#hero-product-shadow)"/>
+    <path d="M489 278v-31c0-48 79-48 79 0v31" fill="none" stroke="#94704f" stroke-width="6"/>
+    <path d="M491 278v-30c0-44 75-44 75 0v30" fill="none" stroke="#cfac86" stroke-width="2"/>
+    <path d="m466 271 121-4 15 128c-15 13-99 18-140 3z" fill="url(#hero-leather)" stroke="#9b7957" stroke-width=".8"/>
+    <path d="m587 267 14 7 13 115-12 6z" fill="url(#hero-side)"/>
+    <path d="m473 279-3 109m108-111 13 108" fill="none" stroke="#eed2af" stroke-width=".9" opacity=".85"/>
+    <path d="M466 271c30 8 82 5 121-4" fill="none" stroke="#896b50" stroke-width="1.4"/>
+    <rect x="513" y="320" width="32" height="24" rx="1.5" fill="#dcbf99" stroke="#b18c66" stroke-width=".5"/>
+    <text x="529" y="334" text-anchor="middle" font-family="Georgia,serif" font-size="5" fill="#876a4e">everyday.</text>
+    <g fill="#b69062"><circle cx="489" cy="282" r="2"/><circle cx="569" cy="280" r="2"/></g>
+    <text x="164" y="488" font-family="Georgia,serif" font-size="20" fill="#2d3e2e">The everyday tote</text>
+    <text x="638" y="486" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#4c5d41">Rs. 1,290</text>
+    <text x="164" y="508" font-family="Arial,sans-serif" font-size="8" fill="#8c947e">SAND / EVERYDAY ESSENTIALS</text>
+    <circle cx="613" cy="504" r="4" fill="#c7a37e"/><circle cx="628" cy="504" r="4" fill="#829174"/>
+    <rect x="159" y="530" width="490" height="40" rx="4" fill="#293d2c"/>
+    <text x="404" y="554" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#f5f6ed" data-store-action="">Continue to checkout →</text>
+  </g>
+  <g transform="rotate(-8 168 125)" filter="url(#hero-soft-shadow)">
+    <rect x="47" y="77" width="213" height="82" rx="9" fill="#fffef9" stroke="#d4d9ca"/>
+    <rect x="62" y="94" width="33" height="33" rx="8" fill="#edf0e4"/>
+    <path d="M72 110h14m-7-7v14m-4-11 8 8m-8 0 8-8" fill="none" stroke="#7f9465" stroke-width="1.3"/>
+    <text x="107" y="107" fill="#869079" font-family="Arial,sans-serif" font-size="7" letter-spacing="1">YOUR BRAND. YOUR SPACE.</text>
+    <text x="107" y="124" fill="#36482f" font-family="Arial,sans-serif" font-size="10">Built around your business.</text>
+    <path d="M64 143h177" stroke="#e6e9df"/>
+  </g>
+  <g transform="translate(0 30) rotate(4 537 615)" filter="url(#hero-soft-shadow)">
+    <rect x="356" y="560" width="367" height="137" rx="11" fill="url(#hero-panel)" stroke="#4b6047" stroke-width=".7"/>
+    <circle cx="381" cy="585" r="3" fill="#d5e3b6"/>
+    <text x="392" y="588" fill="#b5c69c" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.4">CUSTOMER SIGNALS</text>
+    <path d="M610 604h88m-88-17h88m-88 34h88" stroke="#a4bf83" stroke-width=".5" opacity=".18"/>
+    <path d="m610 615 13-6 13 3 15-15 16 4 15-17 16-5v45h-88z" fill="url(#hero-trend)"/>
+    <path d="m610 615 13-6 13 3 15-15 16 4 15-17 16-5" fill="none" stroke="#d2e5a9" stroke-width="1.5"/>
+    <circle cx="698" cy="579" r="2.5" fill="#e7efce"/>
+    <text x="379" y="645" fill="#f6f7ed" font-family="Arial,sans-serif" font-size="13" data-store-note="">From browsing to an online order</text>
+    <text x="379" y="670" fill="#b2c29f" font-family="Arial,sans-serif" font-size="10" data-store-caption="">Payments, orders &amp; inventory. Connected.</text>
+  </g>
+  <g transform="translate(639 509) rotate(-13)">
+    <path d="m0 0 7 32 8-11 14-2z" fill="#c94623" stroke="#fffef9" stroke-width="2.3"/>
+  </g>
+  <g fill="none" stroke="#c94623" stroke-width="1.1"><path d="M704 104v25m-12-12h25m-21-9 17 17m-17 0 17-17"/></g>
+</svg>

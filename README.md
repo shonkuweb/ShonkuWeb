@@ -1,51 +1,53 @@
-# ShonkuWeb — AI-First Systems Studio
+# ShonkuWEB
 
-> **Autonomous AI Agents & Custom Intelligent Automations for High-Growth Enterprises.**
+The ShonkuWEB studio website, built with static HTML, CSS, and JavaScript.
 
-Inspired by the visionary spirit of Professor Shonku, ShonkuWeb engineers production-grade **Customer Support AI Agents**, bespoke **Custom AI Automations**, and AI-native applications that operate with sub-second latency, zero hallucinations, and deep API tool integrations.
+The site introduces the studio and its two services:
 
----
+- **Ecommerce development:** product display, integrated online payments, inventory, and order management.
+- **Catalog website development:** product display, inventory management, and ordering through WhatsApp, without a payment gateway.
 
-## ✨ Features & Architecture
+## Local development
 
-- **Theme & Aesthetics**: Minimalist "Premium White" design system inspired by leading AI startups (Linear, OpenAI, Perplexity, Cursor, Vercel).
-- **Flagship Solutions**:
-  - **Customer Support AI Agents**: Grounded knowledge base (RAG), multi-channel deployment (Web, WhatsApp, Slack, Email), tool execution, and intelligent human escalation.
-  - **Custom AI Automations**: Unstructured document extraction, multi-agent sequential workflows, CRM/ERP bidirectional sync (Salesforce, SAP, Stripe), and self-healing background workers.
-- **Interactive AI Playground**: Real-time interactive agent runtime simulator on the homepage demonstrating live prompt reasoning, tool calls, and latency telemetry.
-- **Performance & Standards**: Zero heavyweight JS frameworks required, ultra-fast vanilla HTML/CSS/JS, fully responsive with clean micro-interactions and smooth accordion accordions.
+From the repository root:
 
----
-
-## 📁 Directory Structure
-
-```text
-├── index.html                     # Homepage with Hero, Interactive AI Simulator & Flagships
-├── services/index.html            # Deep breakdown of Support AI & Custom Automations
-├── aboutus/index.html             # The Shonku legacy, engineering code & founding team
-├── bidhushekhar/index.html        # BidhuShekar autonomous agent runtime lab waitlist
-├── contactus/index.html           # Technical scoping & consultation intake
-├── payment/index.html             # Secure client invoicing portal
-├── terms&conditions/index.html    # Terms & Conditions
-├── cancellation-refund-policy/    # Cancellation & Refund Policy
-├── shipping-delivery-policy/      # Digital Delivery & Deployment Policy
-├── style.css                      # Cohesive Premium White design tokens & animations
-├── script.js                      # Agent simulator, responsive drawer, FAQ accordion
-└── sitemap.xml                    # Updated site index
+```sh
+python3 -m http.server 3000 --bind 127.0.0.1
 ```
 
----
+Open [localhost:3000](http://localhost:3000). Refresh the browser after editing files. No installation or build step is required.
 
-## 🚀 Deployment & Local Testing
+## Pages and assets
 
-Serve locally with any static web server:
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Studio overview and services |
+| `services/index.html` | Service details, comparison, and FAQs |
+| `aboutus/index.html` | Studio story, approach, and founders |
+| `contactus/index.html` | Project enquiry email helper |
+| `assets/studio.css` | Shared responsive design |
+| `assets/studio.js` | Mobile menu, storefront illustration switch, enquiry drafts |
+| `assets/favicon.svg` | Site icon |
+| `assets/art/` | Original vector illustrations for service journeys, connected business data, the studio, and contact |
+| `assets/motion/` | Inline ecommerce and catalog shopping demos, static posters, and earlier explainer assets |
+| `scripts/render-motion.py` | Motion-graphics authoring script (Pillow and ffmpeg required only to re-render) |
+| `scripts/render-shopping-demos.py` | Customer-journey demo authoring, using original vector UI artwork |
+| `terms&conditions/`, `cancellation-refund-policy/`, `shipping-delivery-policy/`, `payment/` | Existing policies and billing content with refreshed navigation |
 
-```bash
-# Python
-python3 -m http.server 8080
+The older `bidhushekhar/` page retains its content styling, with the current shared navigation and a contact link for enquiries. Policy and billing pages also use `style.css` for content layout. All pages use the current `assets/studio.js` interactions; `script.js` is retained as legacy source.
 
-# Node.js
-npx serve .
-```
+Responsive layouts cover narrow phones, phones, tablets, and desktops. On phones the service comparison becomes readable cards, navigation opens as a disclosure menu, and form fields use 16px text. Entry and scroll animations respect reduced-motion preferences. Below-fold illustrations load lazily, and shopping demos pause outside the viewport.
 
-© 2026 ShonkuWeb. All rights reserved.
+## Contact behaviour
+
+The enquiry form validates the brief and prepares an email to `contact@shonkuweb.com`. Visitors review it and open their email app to send it, or copy the text. The site does **not** send enquiries, store submissions, or claim that a message has been delivered. A backend or form service is needed for direct submission.
+
+## Content to add later
+
+Past project names, descriptions, links, and images will be supplied separately. The homepage includes a small coming-soon note; no client case studies or performance statistics are invented.
+
+Google Fonts supplies DM Sans and Manrope, with system-font fallbacks. Storefront illustrations are inline SVG and CSS. The illustration switch demonstrates the ordering paths; it is not a working store.
+
+## Deployment
+
+Serve this directory as a static site. Existing Apache clean-URL redirects are in `.htaccess`. The default Git push destination is `origin` (`https://github.com/shonkuweb/ShonkuWeb.git`), with `main` tracking `origin/main`.
